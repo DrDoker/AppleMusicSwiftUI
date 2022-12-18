@@ -14,10 +14,11 @@ struct MediaLibraryView: View {
 		NavigationStack {
 			
 			LibraryView
-				.navigationTitle("Медиатека")
+				.navigationTitle("Library")
 				.toolbar {
 						EditButton()
 				}.environment(\.editMode, $mode)
+				
 		}
 	}
 	
@@ -28,6 +29,7 @@ struct MediaLibraryView: View {
 			EmptyLibraryView()
 		}
 	}
+	
 	
 }
 

@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct EditListView: View {
+	
+	@State var listData = Model.data
+	@State var selectionItems: [String] = []
+	@State private var multiSelection = Set<UUID>()
+	
 	var body: some View {
-		List {
-			ForEach(0..<10) { _ in
-				Text("Test")
+		List(selection: $multiSelection) {
+			ForEach(listData, id: \.id) { item in
+				ListItemView(title: item.title, icon: item.icon, isSelected: false)
 			}
-			.onMove { IndexSet, Int in
-				
-			}
+			.onMove(perform: moveItem)
 		}
 		.listStyle(.plain)
+	}
+	
+	func moveItem(from sourcePosition: IndexSet, to destinationPosition: Int) {
+		self.listData.move(
+			fromOffsets: sourcePosition,
+			toOffset: destinationPosition
+		)
 	}
 }
 

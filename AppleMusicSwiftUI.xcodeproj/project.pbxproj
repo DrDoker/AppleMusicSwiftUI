@@ -18,6 +18,8 @@
 		C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */; };
 		C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA100294EA2D700FF0BC6 /* EditListView.swift */; };
 		C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */; };
+		C5BEA107294F49AE00FF0BC6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA106294F49AE00FF0BC6 /* Model.swift */; };
+		C5BEA109294F521100FF0BC6 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA108294F521100FF0BC6 /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLibraryView.swift; sourceTree = "<group>"; };
 		C5BEA100294EA2D700FF0BC6 /* EditListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListView.swift; sourceTree = "<group>"; };
 		C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C5BEA106294F49AE00FF0BC6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C5BEA108294F521100FF0BC6 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */,
 				C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */,
 				C5BEA100294EA2D700FF0BC6 /* EditListView.swift */,
+				C5BEA108294F521100FF0BC6 /* ListItemView.swift */,
 			);
 			path = MediaLibrary;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */,
 				C5BEA0F9294E897C00FF0BC6 /* View */,
+				C5BEA105294F498F00FF0BC6 /* Model */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -134,6 +140,14 @@
 				C5BEA0F4294E882900FF0BC6 /* SearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		C5BEA105294F498F00FF0BC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA106294F49AE00FF0BC6 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +223,10 @@
 				C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */,
 				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
 				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
+				C5BEA109294F521100FF0BC6 /* ListItemView.swift in Sources */,
 				C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */,
 				C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */,
+				C5BEA107294F49AE00FF0BC6 /* Model.swift in Sources */,
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
 				C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
