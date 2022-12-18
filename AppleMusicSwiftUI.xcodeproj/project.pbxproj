@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */; };
-		C584ED14294E7E840019AF5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584ED13294E7E840019AF5E /* ContentView.swift */; };
 		C584ED16294E7E850019AF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED15294E7E850019AF5E /* Assets.xcassets */; };
 		C584ED19294E7E850019AF5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED18294E7E850019AF5E /* Preview Assets.xcassets */; };
+		C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */; };
+		C5BEA0F1294E86D700FF0BC6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */; };
+		C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */; };
+		C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0F4294E882900FF0BC6 /* SearchView.swift */; };
+		C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C584ED0E294E7E840019AF5E /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
-		C584ED13294E7E840019AF5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C584ED15294E7E850019AF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C584ED18294E7E850019AF5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryView.swift; sourceTree = "<group>"; };
+		C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		C5BEA0F4294E882900FF0BC6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,8 @@
 		C584ED10294E7E840019AF5E /* AppleMusicSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */,
-				C584ED13294E7E840019AF5E /* ContentView.swift */,
-				C584ED15294E7E850019AF5E /* Assets.xcassets */,
-				C584ED17294E7E850019AF5E /* Preview Content */,
+				C5BEA0F7294E892F00FF0BC6 /* Sources */,
+				C5BEA0F8294E893400FF0BC6 /* Resources */,
 			);
 			path = AppleMusicSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +71,60 @@
 				C584ED18294E7E850019AF5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5BEA0F6294E890700FF0BC6 /* MediaLibraryModule */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */,
+			);
+			path = MediaLibraryModule;
+			sourceTree = "<group>";
+		};
+		C5BEA0F7294E892F00FF0BC6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */,
+				C5BEA0F9294E897C00FF0BC6 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C5BEA0F8294E893400FF0BC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C584ED15294E7E850019AF5E /* Assets.xcassets */,
+				C584ED17294E7E850019AF5E /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5BEA0F9294E897C00FF0BC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */,
+				C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */,
+				C5BEA0F6294E890700FF0BC6 /* MediaLibraryModule */,
+				C5BEA0FA294E899E00FF0BC6 /* RadioModule */,
+				C5BEA0FB294E89BD00FF0BC6 /* SearchModule */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5BEA0FA294E899E00FF0BC6 /* RadioModule */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */,
+			);
+			path = RadioModule;
+			sourceTree = "<group>";
+		};
+		C5BEA0FB294E89BD00FF0BC6 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA0F4294E882900FF0BC6 /* SearchView.swift */,
+			);
+			path = SearchModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C584ED14294E7E840019AF5E /* ContentView.swift in Sources */,
+				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
+				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
+				C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */,
+				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
+				C5BEA0F1294E86D700FF0BC6 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusicSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusicSwiftUI/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = N2XAP4CLZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusicSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusicSwiftUI/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = N2XAP4CLZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
