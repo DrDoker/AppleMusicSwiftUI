@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-		ZStack {
-			MainTabView()				
+		ZStack(alignment: .bottom) {
+			MainTabView()
+//			PlayerView()
 		}
     }
 }

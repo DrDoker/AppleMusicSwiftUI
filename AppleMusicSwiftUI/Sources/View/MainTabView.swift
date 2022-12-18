@@ -9,23 +9,21 @@ import SwiftUI
 
 struct MainTabView: View {
 	var body: some View {
-		VStack{
-			TabView {
-				MediaLibraryView()
-					.tabItem {
-						Label("Медиатека", systemImage: "play.square.stack.fill")
-					}
-				RadioView()
-					.tabItem {
-						Label("Радио", systemImage: "dot.radiowaves.left.and.right")
-					}
-				SearchView()
-					.tabItem {
-						Label("Поиск", systemImage: "magnifyingglass")
-					}
-			}
-			.tint(.red)
+		TabView {
+			MediaLibraryView()
+				.tabItem {
+					Label("Медиатека", systemImage: "play.square.stack.fill")
+				}
+			RadioView()
+				.tabItem {
+					Label("Радио", systemImage: "dot.radiowaves.left.and.right")
+				}
+			SearchView()
+				.tabItem {
+					Label("Поиск", systemImage: "magnifyingglass")
+				}
 		}
+		.tint(.red)
 		
 	}
 }

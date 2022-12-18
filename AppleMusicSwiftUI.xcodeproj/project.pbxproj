@@ -17,6 +17,7 @@
 		C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */; };
 		C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */; };
 		C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA100294EA2D700FF0BC6 /* EditListView.swift */; };
+		C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLibraryView.swift; sourceTree = "<group>"; };
 		C5BEA100294EA2D700FF0BC6 /* EditListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListView.swift; sourceTree = "<group>"; };
+		C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				C5BEA0F6294E890700FF0BC6 /* MediaLibraryModule */,
 				C5BEA0FA294E899E00FF0BC6 /* RadioModule */,
 				C5BEA0FB294E89BD00FF0BC6 /* SearchModule */,
+				C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */,
 				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
 				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
 				C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */,
