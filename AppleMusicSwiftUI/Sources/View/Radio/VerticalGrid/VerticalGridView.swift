@@ -16,17 +16,8 @@ struct VerticalGridView: View {
 			Text("Stations")
 			LazyVGrid(columns: columns) {
 				ForEach((1...18), id: \.self) { number in
-					HStack {
-						Image("cover")
-							.resizable()
-							.cornerRadius(24)
-							.scaledToFit()
-							.shadow(radius: 5)
-						Text("Text")
-						Spacer()
-					}
-					.frame(height: 100)
-					.padding()
+					VerticalGridItemView()
+					Divider()
 				}
 			}
 		}
