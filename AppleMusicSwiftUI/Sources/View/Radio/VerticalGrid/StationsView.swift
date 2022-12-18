@@ -7,17 +7,20 @@
 
 import SwiftUI
 
-struct VerticalGridView: View {
+struct StationsView: View {
 	var columns: [GridItem] =
 	Array(repeating: .init(.flexible()), count: 1)
 	
 	var body: some View {
-		VStack {
+		VStack(alignment: .leading, spacing: 10) {
 			Text("Stations")
+				.font(.system(size: 30))
+				.fontWeight(.bold)
+				.padding(.leading)
+			
 			LazyVGrid(columns: columns) {
-				ForEach((1...18), id: \.self) { number in
-					VerticalGridItemView()
-					Divider()
+				ForEach((1...4), id: \.self) { number in
+					StationsItemView()
 				}
 			}
 		}
@@ -26,6 +29,6 @@ struct VerticalGridView: View {
 
 struct VerticalGridView_Previews: PreviewProvider {
 	static var previews: some View {
-		VerticalGridView()
+		StationsView()
 	}
 }
