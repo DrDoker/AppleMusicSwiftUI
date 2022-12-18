@@ -13,7 +13,7 @@ struct RadioView: View {
 		NavigationStack {
 			ScrollView(.vertical, showsIndicators: false) {
 				Divider()
-				HorizontalGridView()
+				FavoritesView()
 				Divider()
 				VerticalGridView()
 			}
