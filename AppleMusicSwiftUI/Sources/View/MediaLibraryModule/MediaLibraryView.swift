@@ -8,42 +8,27 @@
 import SwiftUI
 
 struct MediaLibraryView: View {
-	
-		struct Ocean: Identifiable, Hashable {
-			let id = UUID()
-			let name: String
-		}
-	
-		private var oceans = [
-			Ocean(name: "Pacific"),
-			Ocean(name: "Atlantic"),
-			Ocean(name: "Indian"),
-			Ocean(name: "Southern"),
-			Ocean(name: "Arctic")
-		]
-	
-	@State private var multiSelection = Set<UUID>()
+	@State var mode: EditMode = .inactive
 	
 	var body : some View {
-		NavigationView {
-			List(selection: $multiSelection) {
-				ForEach(oceans) { ocean in
-					Text(ocean.name)
-				}
-				.onMove(perform: move)
-			}
-			.listStyle(.plain)
-			.navigationTitle("Медиатека")
-			.toolbar {
-				EditButton()
-			}
+		NavigationStack {
+			
+			LibraryView
+				.navigationTitle("Медиатека")
+				.toolbar {
+						EditButton()
+				}.environment(\.editMode, $mode)
 		}
 	}
 	
-	func move(from source: IndexSet, to destination: Int) {
-		
+	@ViewBuilder var LibraryView: some View {
+		if mode == .active {
+			EditListView()
+		} else {
+			EmptyLibraryView()
+		}
 	}
-
+	
 }
 
 struct MediaLibraryView_Previews: PreviewProvider {

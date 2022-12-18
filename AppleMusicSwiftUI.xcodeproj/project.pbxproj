@@ -15,6 +15,8 @@
 		C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */; };
 		C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0F4294E882900FF0BC6 /* SearchView.swift */; };
 		C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */; };
+		C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */; };
+		C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA100294EA2D700FF0BC6 /* EditListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		C5BEA0F4294E882900FF0BC6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLibraryView.swift; sourceTree = "<group>"; };
+		C5BEA100294EA2D700FF0BC6 /* EditListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */,
+				C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */,
+				C5BEA100294EA2D700FF0BC6 /* EditListView.swift */,
 			);
 			path = MediaLibraryModule;
 			sourceTree = "<group>";
@@ -199,8 +205,10 @@
 			files = (
 				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
 				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
+				C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */,
 				C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */,
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
+				C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
 				C5BEA0F1294E86D700FF0BC6 /* MainTabView.swift in Sources */,
 			);
