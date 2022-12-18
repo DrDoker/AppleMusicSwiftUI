@@ -30,6 +30,7 @@ struct PlayerView: View {
 						.padding(.trailing, 10)
 				}
 			}
+			.imageScale(.large)
 			.foregroundColor(.black)
 			
 		}

@@ -20,6 +20,8 @@
 		C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */; };
 		C5BEA107294F49AE00FF0BC6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA106294F49AE00FF0BC6 /* Model.swift */; };
 		C5BEA109294F521100FF0BC6 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA108294F521100FF0BC6 /* ListItemView.swift */; };
+		C5BEA10D294FB22200FF0BC6 /* VerticalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA10C294FB22200FF0BC6 /* VerticalGridView.swift */; };
+		C5BEA10F294FB51B00FF0BC6 /* HorizontalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA10E294FB51B00FF0BC6 /* HorizontalGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		C5BEA106294F49AE00FF0BC6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C5BEA108294F521100FF0BC6 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		C5BEA10C294FB22200FF0BC6 /* VerticalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGridView.swift; sourceTree = "<group>"; };
+		C5BEA10E294FB51B00FF0BC6 /* HorizontalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */,
+				C5BEA10C294FB22200FF0BC6 /* VerticalGridView.swift */,
+				C5BEA10E294FB51B00FF0BC6 /* HorizontalGridView.swift */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -222,12 +228,14 @@
 			files = (
 				C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */,
 				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
+				C5BEA10F294FB51B00FF0BC6 /* HorizontalGridView.swift in Sources */,
 				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
 				C5BEA109294F521100FF0BC6 /* ListItemView.swift in Sources */,
 				C5BEA101294EA2D700FF0BC6 /* EditListView.swift in Sources */,
 				C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */,
 				C5BEA107294F49AE00FF0BC6 /* Model.swift in Sources */,
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
+				C5BEA10D294FB22200FF0BC6 /* VerticalGridView.swift in Sources */,
 				C5BEA0FF294EA13400FF0BC6 /* EmptyLibraryView.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
 				C5BEA0F1294E86D700FF0BC6 /* MainTabView.swift in Sources */,
@@ -367,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct RadioView: View {
-    var body: some View {
-        Text("Radio")
-    }
+
+	var body: some View {
+		NavigationStack {
+			ScrollView(.vertical, showsIndicators: false) {
+				Divider()
+				HorizontalGridView()
+				Divider()
+				VerticalGridView()
+			}
+			.navigationTitle("Radio")
+		}
+	}
 }
 
 struct RadioView_Previews: PreviewProvider {
-    static var previews: some View {
-        RadioView()
-    }
+	static var previews: some View {
+		RadioView()
+	}
 }
