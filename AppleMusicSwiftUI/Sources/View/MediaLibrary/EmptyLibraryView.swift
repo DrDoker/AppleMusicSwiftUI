@@ -21,7 +21,6 @@ struct EmptyLibraryView: View {
 		}
 		.padding(.horizontal, 40)
 		.multilineTextAlignment(.center)
-		
     }
 }
 

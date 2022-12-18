@@ -17,7 +17,6 @@ struct MediaLibraryView: View {
 				.toolbar {
 						EditButton()
 				}.environment(\.editMode, $mode)
-				
 		}
 	}
 	
@@ -28,8 +27,6 @@ struct MediaLibraryView: View {
 			EmptyLibraryView()
 		}
 	}
-	
-	
 }
 
 struct MediaLibraryView_Previews: PreviewProvider {

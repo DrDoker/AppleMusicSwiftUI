@@ -28,6 +28,7 @@ struct EditListView: View {
 			fromOffsets: sourcePosition,
 			toOffset: destinationPosition
 		)
+		Model.data = listData
 	}
 }
 

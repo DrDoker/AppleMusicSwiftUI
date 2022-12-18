@@ -16,7 +16,7 @@ struct Model {
 
 extension Model {
 
-	static let data = [
+	static var data = [
 		Model(title: "Playlists", icon: "music.note.list"),
 		Model(title: "Artists", icon: "music.mic"),
 		Model(title: "Albums", icon: "doc.circle"),
