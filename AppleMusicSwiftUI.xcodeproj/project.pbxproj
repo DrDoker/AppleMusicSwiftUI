@@ -79,14 +79,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C5BEA0F6294E890700FF0BC6 /* MediaLibraryModule */ = {
+		C5BEA0F6294E890700FF0BC6 /* MediaLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				C5BEA0EC294E861900FF0BC6 /* MediaLibraryView.swift */,
 				C5BEA0FE294EA13400FF0BC6 /* EmptyLibraryView.swift */,
 				C5BEA100294EA2D700FF0BC6 /* EditListView.swift */,
 			);
-			path = MediaLibraryModule;
+			path = MediaLibrary;
 			sourceTree = "<group>";
 		};
 		C5BEA0F7294E892F00FF0BC6 /* Sources */ = {
@@ -112,28 +112,28 @@
 			children = (
 				C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */,
 				C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */,
-				C5BEA0F6294E890700FF0BC6 /* MediaLibraryModule */,
-				C5BEA0FA294E899E00FF0BC6 /* RadioModule */,
-				C5BEA0FB294E89BD00FF0BC6 /* SearchModule */,
+				C5BEA0F6294E890700FF0BC6 /* MediaLibrary */,
+				C5BEA0FA294E899E00FF0BC6 /* Radio */,
+				C5BEA0FB294E89BD00FF0BC6 /* Search */,
 				C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		C5BEA0FA294E899E00FF0BC6 /* RadioModule */ = {
+		C5BEA0FA294E899E00FF0BC6 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
 				C5BEA0F2294E87A400FF0BC6 /* RadioView.swift */,
 			);
-			path = RadioModule;
+			path = Radio;
 			sourceTree = "<group>";
 		};
-		C5BEA0FB294E89BD00FF0BC6 /* SearchModule */ = {
+		C5BEA0FB294E89BD00FF0BC6 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				C5BEA0F4294E882900FF0BC6 /* SearchView.swift */,
 			);
-			path = SearchModule;
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
