@@ -12,6 +12,7 @@ struct PlayerView: View {
 		HStack(alignment: .center) {
 			Image("cover")
 				.resizable()
+				.scaledToFit()
 				.frame(
 					width: 60,
 					height: 60
