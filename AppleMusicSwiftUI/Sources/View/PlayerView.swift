@@ -9,13 +9,37 @@ import SwiftUI
 
 struct PlayerView: View {
 	var body: some View {
-		HStack {
-			Rectangle()
+		HStack(alignment: .center) {
+			Image("cover")
+				.resizable()
+				.frame(
+					width: 60,
+					height: 60
+				)
+				.cornerRadius(8)
+			Text("Eminem - Lost Yourself")
+				.padding(.leading)
+			Spacer()
+			HStack {
+				Button(action: {}) {
+					Image(systemName: "play.fill")
+						.padding(.trailing, 10)
+				}
+				Button(action: {}) {
+					Image(systemName: "forward.fill")
+						.padding(.trailing, 10)
+				}
+			}
+			.foregroundColor(.black)
+			
 		}
-		.frame(height: 70)
-		.background(Color.init(.systemGray6))
-		.offset(y: -49)
+		.padding(.horizontal)
+		.frame(height: 80)
+		.background(Color.white)
+		.overlay(Divider(), alignment: .top)
+		.overlay(Divider(), alignment: .bottom)
 	}
+	
 }
 
 struct PlayerView_Previews: PreviewProvider {

@@ -12,7 +12,6 @@ struct MediaLibraryView: View {
 	
 	var body : some View {
 		NavigationStack {
-			
 			LibraryView
 				.navigationTitle("Library")
 				.toolbar {
