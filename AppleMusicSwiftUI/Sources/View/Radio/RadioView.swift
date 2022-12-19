@@ -15,7 +15,7 @@ struct RadioView: View {
 				Divider()
 				FavoritesView()
 				Divider()
-				VerticalGridView()
+				StationsView()
 			}
 			.navigationTitle("Radio")
 		}

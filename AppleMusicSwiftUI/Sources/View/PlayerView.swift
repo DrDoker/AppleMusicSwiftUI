@@ -12,14 +12,19 @@ struct PlayerView: View {
 		HStack(alignment: .center) {
 			Image("cover")
 				.resizable()
+				.scaledToFit()
 				.frame(
 					width: 60,
 					height: 60
 				)
-				.cornerRadius(8)
+				.cornerRadius(4)
+				.shadow(radius: 5)
+			
 			Text("Eminem - Lost Yourself")
 				.padding(.leading)
+			
 			Spacer()
+			
 			HStack {
 				Button(action: {}) {
 					Image(systemName: "play.fill")

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditListView: View {
 	
-	@State var listData = Model.data
+	@State var listData = CategoriesModel.data
 	@State var selectionItems: [String] = []
 	@State private var multiSelection = Set<UUID>()
 	
@@ -28,7 +28,7 @@ struct EditListView: View {
 			fromOffsets: sourcePosition,
 			toOffset: destinationPosition
 		)
-		Model.data = listData
+		CategoriesModel.data = listData
 	}
 }
 
