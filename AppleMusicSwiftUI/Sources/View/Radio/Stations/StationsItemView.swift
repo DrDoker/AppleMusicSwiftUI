@@ -17,7 +17,6 @@ struct StationsItemView: View {
 			Image(image)
 				.resizable()
 				.cornerRadius(4)
-//				.scaledToFit()
 				.shadow(radius: 6)
 				.frame(width: 120, height: 120)
 			

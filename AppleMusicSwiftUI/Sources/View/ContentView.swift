@@ -11,10 +11,8 @@ struct ContentView: View {
     var body: some View {
 		ZStack(alignment: .bottom) {
 			MainTabView()
-			
-// Выключил чтоб не мешал
-//			PlayerView()
-//				.offset(y: -50)
+			PlayerView()
+				.offset(y: -50)
 		}
     }
 }
