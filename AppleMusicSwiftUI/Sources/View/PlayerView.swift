@@ -14,10 +14,10 @@ struct PlayerView: View {
 				.resizable()
 				.scaledToFit()
 				.frame(
-					width: 60,
-					height: 60
+					width: 55,
+					height: 55
 				)
-				.cornerRadius(4)
+				.cornerRadius(6)
 				.shadow(radius: 5)
 			
 			Text("Eminem - Lost Yourself")
@@ -40,10 +40,10 @@ struct PlayerView: View {
 			
 		}
 		.padding(.horizontal)
-		.frame(height: 80)
-		.background(Color.white)
-		.overlay(Divider(), alignment: .top)
+		.frame(height: 70)
+//		.overlay(Divider(), alignment: .top)
 		.overlay(Divider(), alignment: .bottom)
+		.background(.bar)
 	}
 	
 }

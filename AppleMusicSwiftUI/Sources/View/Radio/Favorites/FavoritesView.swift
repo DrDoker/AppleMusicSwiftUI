@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct FavoritesView: View {
 	
 	@State var favorites = FavoritesModel.data
