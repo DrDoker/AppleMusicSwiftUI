@@ -17,7 +17,9 @@ struct RadioView: View {
 				Divider()
 				StationsView()
 			}
+			.padding(.bottom, 70)
 			.navigationTitle("Radio")
+			
 		}
 	}
 }
