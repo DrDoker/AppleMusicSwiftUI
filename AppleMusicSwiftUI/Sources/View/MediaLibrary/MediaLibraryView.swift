@@ -22,7 +22,7 @@ struct MediaLibraryView: View {
 	
 	@ViewBuilder var LibraryView: some View {
 		if mode == .active {
-			EditListView()
+			CategoriesListView()
 		} else {
 			EmptyLibraryView()
 		}

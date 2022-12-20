@@ -17,9 +17,9 @@ struct FavoritesModel {
 extension FavoritesModel {
 
 	static var data = [
-		FavoritesModel(title: "indie + chill", description: "Gentle indie pop and rock melodies that make moments better.", image: "indie"),
-		FavoritesModel(title: "Episode 576", description: "Music from Wizkid, Kobe JT, and Cajmere.", image: "episode576"),
-		FavoritesModel(title: "Iconic Duets with Sabi", description: "Iconic Duets to celebrate Apple Music Sing.", image: "iconic"),
-		FavoritesModel(title: "In My Room", description: "Close the door, find a comfy corner, and get in your feelings.", image: "relax")
+		FavoritesModel(title: "indie + chill", description: "Gentle indie pop and rock melodies that make moments better.", image: Images.Favorites.indie),
+		FavoritesModel(title: "Episode 576", description: "Music from Wizkid, Kobe JT, and Cajmere.", image: Images.Favorites.episode),
+		FavoritesModel(title: "Iconic Duets with Sabi", description: "Iconic Duets to celebrate Apple Music Sing.", image: Images.Favorites.iconic),
+		FavoritesModel(title: "In My Room", description: "Close the door, find a comfy corner, and get in your feelings.", image: Images.Favorites.relax)
 	]
 }

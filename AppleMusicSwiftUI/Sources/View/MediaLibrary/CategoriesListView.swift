@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EditListView: View {
+struct CategoriesListView: View {
 	
 	@State var listData = CategoriesModel.data
 	@State var selectionItems: [String] = []
@@ -34,6 +34,6 @@ struct EditListView: View {
 
 struct EditListView_Previews: PreviewProvider {
 	static var previews: some View {
-		EditListView()
+		CategoriesListView()
 	}
 }
