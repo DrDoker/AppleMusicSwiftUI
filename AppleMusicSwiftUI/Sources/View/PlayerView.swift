@@ -10,7 +10,7 @@ import SwiftUI
 struct PlayerView: View {
 	var body: some View {
 		HStack(alignment: .center) {
-			Image(Images.Player.cover)
+			Image(with: .cover)
 				.resizable()
 				.scaledToFit()
 				.frame(
@@ -27,11 +27,11 @@ struct PlayerView: View {
 			
 			HStack {
 				Button(action: {}) {
-					Image(systemName: Images.Player.play)
+					Image(with: .play)
 						.padding(.trailing, 10)
 				}
 				Button(action: {}) {
-					Image(systemName: Images.Player.forward)
+					Image(with: .forward)
 						.padding(.trailing, 10)
 				}
 			}

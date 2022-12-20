@@ -17,15 +17,15 @@ struct CategoriesModel {
 extension CategoriesModel {
 
 	static var data = [
-		CategoriesModel(title: "Playlists", icon: Images.CategoriesIcons.playlists),
-		CategoriesModel(title: "Artists", icon: Images.CategoriesIcons.artists),
-		CategoriesModel(title: "Albums", icon: Images.CategoriesIcons.albums),
-		CategoriesModel(title: "Songs", icon: Images.CategoriesIcons.songs),
-		CategoriesModel(title: "Show and films", icon: Images.CategoriesIcons.films),
-		CategoriesModel(title: "Videoclips", icon: Images.CategoriesIcons.videoclips),
-		CategoriesModel(title: "Genres", icon: Images.CategoriesIcons.genres),
-		CategoriesModel(title: "Collection", icon: Images.CategoriesIcons.collection),
-		CategoriesModel(title: "Authors", icon: Images.CategoriesIcons.authors),
-		CategoriesModel(title: "Downloads", icon: Images.CategoriesIcons.downloads)
+		CategoriesModel(title: "Playlists", icon: SFSymbols.playlists.rawValue),
+		CategoriesModel(title: "Artists", icon: SFSymbols.artists.rawValue),
+		CategoriesModel(title: "Albums", icon: SFSymbols.albums.rawValue),
+		CategoriesModel(title: "Songs", icon: SFSymbols.songs.rawValue),
+		CategoriesModel(title: "Show and films", icon: SFSymbols.films.rawValue),
+		CategoriesModel(title: "Videoclips", icon: SFSymbols.videoclips.rawValue),
+		CategoriesModel(title: "Genres", icon: SFSymbols.genres.rawValue),
+		CategoriesModel(title: "Collection", icon: SFSymbols.collection.rawValue),
+		CategoriesModel(title: "Authors", icon: SFSymbols.authors.rawValue),
+		CategoriesModel(title: "Downloads", icon: SFSymbols.downloads.rawValue)
 	]
 }

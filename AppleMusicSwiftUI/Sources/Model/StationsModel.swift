@@ -17,13 +17,13 @@ struct StationsModel {
 extension StationsModel {
 
 	static var data = [
-		StationsModel(title: "Apple Music 1", description: "The new music that matters.", image: Images.Stations.oneMusic),
-		StationsModel(title: "The Country Chart Show", description: "Gentle indie pop and rock melodies that make moments better.", image: Images.Stations.country),
-		StationsModel(title: "The Dotty Show", description: "Festive classics and new favourites.", image: Images.Stations.dotty),
-		StationsModel(title: "Jayde Donovan", description: "Keeping your workout honest as we ramp up to the holidays.", image: Images.Stations.jayde),
-		StationsModel(title: "Tokyo Highway Radio", description: "Tokyo Highway: 2022.", image: Images.Stations.tokyo),
-		StationsModel(title: "The Rebecca Judd Show", description: "Rebecca introduces Manchester producer [ K S R ].", image: Images.Stations.rebecco),
-		StationsModel(title: "Hit FM", description: "Radio Station.", image: Images.Stations.hitfm),
-		StationsModel(title: "Rock Classics Radio", description: "Jenn is joined by Gavin Rossdale of Bush.", image: Images.Stations.rock)
+		StationsModel(title: "Apple Music 1", description: "The new music that matters.", image: AssetsImages.oneMusic.rawValue),
+		StationsModel(title: "The Country Chart Show", description: "Gentle indie pop and rock melodies that make moments better.", image: AssetsImages.country.rawValue),
+		StationsModel(title: "The Dotty Show", description: "Festive classics and new favourites.", image: AssetsImages.dotty.rawValue),
+		StationsModel(title: "Jayde Donovan", description: "Keeping your workout honest as we ramp up to the holidays.", image: AssetsImages.jayde.rawValue),
+		StationsModel(title: "Tokyo Highway Radio", description: "Tokyo Highway: 2022.", image: AssetsImages.tokyo.rawValue),
+		StationsModel(title: "The Rebecca Judd Show", description: "Rebecca introduces Manchester producer [ K S R ].", image: AssetsImages.rebecco.rawValue),
+		StationsModel(title: "Hit FM", description: "Radio Station.", image: AssetsImages.hitfm.rawValue),
+		StationsModel(title: "Rock Classics Radio", description: "Jenn is joined by Gavin Rossdale of Bush.", image: AssetsImages.rock.rawValue)
 	]
 }

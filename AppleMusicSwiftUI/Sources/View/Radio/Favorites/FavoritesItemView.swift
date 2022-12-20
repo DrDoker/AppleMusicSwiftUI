@@ -40,6 +40,6 @@ struct FavoritesItemView: View {
 
 struct HorizontalGridItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesItemView(title: "Title", description: "Gentle indie pop and rock melodies that make moments better.", image: Images.Favorites.indie)
+		FavoritesItemView(title: "Title", description: "Gentle indie pop and rock melodies that make moments better.", image: AssetsImages.indie.rawValue)
     }
 }
