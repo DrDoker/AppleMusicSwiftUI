@@ -23,6 +23,6 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(title: "Playlists", icon: "music.note.list", isSelected: true)
+		ListItemView(title: "Playlists", icon: SFSymbols.playlists.rawValue, isSelected: true)
     }
 }

@@ -12,15 +12,15 @@ struct MainTabView: View {
 		TabView {
 			MediaLibraryView()
 				.tabItem {
-					Label("Library", systemImage: "play.square.stack.fill")
+					Label("Library", systemImage: SFSymbols.library.rawValue)
 				}
 			RadioView()
 				.tabItem {
-					Label("Radio", systemImage: "dot.radiowaves.left.and.right")
+					Label("Radio", systemImage: SFSymbols.radio.rawValue)
 				}
 			SearchView()
 				.tabItem {
-					Label("Search", systemImage: "magnifyingglass")
+					Label("Search", systemImage: SFSymbols.radio.rawValue)
 				}
 		}
 		.tint(.red)		

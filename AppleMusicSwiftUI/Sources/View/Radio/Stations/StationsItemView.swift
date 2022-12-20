@@ -41,6 +41,6 @@ struct StationsItemView: View {
 
 struct VerticalGridItemView_Previews: PreviewProvider {
     static var previews: some View {
-        StationsItemView(title: "Text", description: "Description Text", image: "hitfm")
+		StationsItemView(title: "Text", description: "Description Text", image: AssetsImages.rebecco.rawValue)
     }
 }
