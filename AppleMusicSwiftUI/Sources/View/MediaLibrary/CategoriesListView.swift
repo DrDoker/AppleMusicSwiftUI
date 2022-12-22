@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CategoriesListView: View {
 	
-	@State var listData = CategoriesModel.data
-	@State var selectionItems: [String] = []
+	@State private var listData = CategoriesModel.data
+	@State private var selectionItems: [String] = []
 	@State private var multiSelection = Set<UUID>()
 	
 	var body: some View {
 		List(selection: $multiSelection) {
 			ForEach(listData, id: \.id) { item in
-				ListItemView(title: item.title, icon: item.icon, isSelected: false)
+				ListItemView(categori: item)
 			}
 			.onMove(perform: moveItem)
 		}

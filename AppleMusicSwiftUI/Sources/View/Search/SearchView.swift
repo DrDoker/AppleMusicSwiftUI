@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct SearchView: View {
-    var body: some View {
-        Text("Search")
-    }
+	@State private var text = ""
+	
+	var body: some View {
+		NavigationStack {
+			ScrollView(.vertical, showsIndicators: false) {
+				Divider()
+				FavoritesView()
+				Divider()
+				StationsView()
+			}
+			.padding(.bottom, 70)
+			.searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")
+			.navigationBarTitle("Search")
+		}
+		
+	}
+	
 }
 
 struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
+	static var previews: some View {
+		SearchView()
+	}
 }
