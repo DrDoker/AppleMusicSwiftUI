@@ -51,7 +51,7 @@
 		C5BEA111294FB96900FF0BC6 /* StationsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsItemView.swift; sourceTree = "<group>"; };
 		C5BEA114294FBA8C00FF0BC6 /* FavoritesItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesItemView.swift; sourceTree = "<group>"; };
 		C5BEA116294FBDB600FF0BC6 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
-		C5CD4F36295746BC002CBA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5CD4F36295746BC002CBA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,6 @@
 		C584ED10294E7E840019AF5E /* AppleMusicSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C5CD4F36295746BC002CBA6E /* Info.plist */,
 				C5BEA0F7294E892F00FF0BC6 /* Sources */,
 				C5BEA0F8294E893400FF0BC6 /* Resources */,
 			);
@@ -132,6 +131,7 @@
 		C5BEA0F8294E893400FF0BC6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C5CD4F36295746BC002CBA6E /* Info.plist */,
 				C584ED15294E7E850019AF5E /* Assets.xcassets */,
 				C584ED17294E7E850019AF5E /* Preview Content */,
 			);
@@ -416,7 +416,7 @@
 				DEVELOPMENT_TEAM = N2XAP4CLZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppleMusicSwiftUI/Info.plist;
+				INFOPLIST_FILE = AppleMusicSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -446,7 +446,7 @@
 				DEVELOPMENT_TEAM = N2XAP4CLZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppleMusicSwiftUI/Info.plist;
+				INFOPLIST_FILE = AppleMusicSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
