@@ -12,10 +12,16 @@ struct ListItemView: View {
 	var categori: CategoriesModel
 
 	var body: some View {
-		HStack {
+		HStack(spacing: 10) {
 			Image(systemName: categori.icon)
+				.resizable()
+				.scaledToFit()
+				.frame(width: 22, height: 22)
+				
 				.foregroundColor(.red)
+				
 			Text(categori.title)
+				.font(Font.system(size: 18, weight: .regular))
 		}
 	}
 }

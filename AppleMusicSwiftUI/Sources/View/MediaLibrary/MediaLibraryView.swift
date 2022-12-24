@@ -8,23 +8,29 @@
 import SwiftUI
 
 struct MediaLibraryView: View {
-	@State var mode: EditMode = .inactive
+	@State private var listData = CategoriesModel.data
+	@State private var isEdit = false
+	@State private var multiSelection = Set<UUID>()
 	
 	var body : some View {
 		NavigationStack {
 			LibraryView
 				.navigationTitle("Library")
 				.toolbar {
-						EditButton()
-				}.environment(\.editMode, $mode)
+					Button {
+						isEdit.toggle()
+					} label: {
+						Text(isEdit ? "Done" : "Edit")
+					}
+				}
 		}
 	}
 	
 	@ViewBuilder var LibraryView: some View {
-		if mode == .active {
-			CategoriesListView()
+		if isEdit {
+			EditCategoriesListView(multiSelection: $multiSelection, listData: $listData)
 		} else {
-			EmptyLibraryView()
+			CategoriesListView(multiSelection: $multiSelection, listData: $listData)
 		}
 	}
 }

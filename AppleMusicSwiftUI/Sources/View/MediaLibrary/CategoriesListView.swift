@@ -1,5 +1,5 @@
 //
-//  EditListView.swift
+//  EmptyLibraryView.swift
 //  AppleMusicSwiftUI
 //
 //  Created by Serhii  on 18/12/2022.
@@ -9,31 +9,45 @@ import SwiftUI
 
 struct CategoriesListView: View {
 	
-	@State private var listData = CategoriesModel.data
-	@State private var selectionItems: [String] = []
-	@State private var multiSelection = Set<UUID>()
+	@Binding var multiSelection: Set<UUID>
+	@Binding var listData: [CategoriesModel]
 	
 	var body: some View {
-		List(selection: $multiSelection) {
-			ForEach(listData, id: \.id) { item in
-				ListItemView(categori: item)
-			}
-			.onMove(perform: moveItem)
-		}
-		.listStyle(.plain)
+		
+		LibraryList
+		
 	}
 	
-	func moveItem(from sourcePosition: IndexSet, to destinationPosition: Int) {
-		self.listData.move(
-			fromOffsets: sourcePosition,
-			toOffset: destinationPosition
-		)
-		CategoriesModel.data = listData
+	@ViewBuilder var LibraryList: some View {
+		if multiSelection.isEmpty {
+			VStack {
+				Text("Search your music?")
+					.font(.title2)
+					.fontWeight(.bold)
+					.padding(.bottom, 1.0)
+				
+				Text("All your music which you buy in iTunes Store stores here.")
+					.foregroundColor(Color.gray)
+				
+			}
+			.padding(.horizontal, 40)
+			.multilineTextAlignment(.center)
+		} else {
+			List {
+				ForEach(listData, id: \.id) { item in
+					if multiSelection.contains(item.id) {
+						ListItemView(categori: item)
+					}
+					
+				}
+			}
+			.listStyle(.inset)
+		}
 	}
 }
 
-struct EditListView_Previews: PreviewProvider {
-	static var previews: some View {
-		CategoriesListView()
-	}
-}
+//struct CategoriesListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EmptyLibraryView()
+//    }
+//}

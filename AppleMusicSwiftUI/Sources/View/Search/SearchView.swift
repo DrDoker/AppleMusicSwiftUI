@@ -22,7 +22,6 @@ struct SearchView: View {
 			.searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")
 			.navigationBarTitle("Search")
 		}
-		
 	}
 	
 }

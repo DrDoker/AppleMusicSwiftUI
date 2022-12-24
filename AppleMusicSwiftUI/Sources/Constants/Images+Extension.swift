@@ -35,13 +35,13 @@ enum SFSymbols: String {
 	
 	case playlists = "music.note.list"
 	case artists = "music.mic"
-	case albums = "doc.circle"
+	case albums = "square.stack"
 	case songs = "music.note"
-	case films = "film"
-	case videoclips = "video.bubble.left"
-	case genres = "tag"
-	case collection = "tray.full"
-	case authors = "person.circle"
+	case films = "tv"
+	case videoclips = "music.note.tv"
+	case genres = "guitars"
+	case collection = "person.2.crop.square.stack"
+	case authors = "music.quarternote.3"
 	case downloads = "arrow.down.circle"
 }
 
