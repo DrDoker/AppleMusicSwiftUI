@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct ListItemView: View {
-	var title: String
-	var icon: String
-	var isSelected: Bool
+	
+	var categori: CategoriesModel
 
 	var body: some View {
-		HStack {
-			Image(systemName: icon)
+		HStack(spacing: 10) {
+			Image(systemName: categori.icon)
+				.resizable()
+				.scaledToFit()
+				.frame(width: 22, height: 22)
+				
 				.foregroundColor(.red)
-			Text(title)
+				
+			Text(categori.title)
+				.font(Font.system(size: 18, weight: .regular))
 		}
 	}
 }
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-		ListItemView(title: "Playlists", icon: SFSymbols.playlists.rawValue, isSelected: true)
+		ListItemView(categori: CategoriesModel(title: "Playlists", icon: SFSymbols.playlists.rawValue))
     }
 }
