@@ -17,7 +17,7 @@ struct StationsItemView: View {
 			Image(image)
 				.resizable()
 				.cornerRadius(4)
-				.shadow(radius: 6)
+				.shadow(radius: 8)
 				.frame(width: 120, height: 120)
 			
 			VStack(alignment: .leading) {

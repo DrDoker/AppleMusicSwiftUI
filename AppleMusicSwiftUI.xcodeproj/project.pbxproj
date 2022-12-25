@@ -27,6 +27,7 @@
 		C5BEA112294FB96900FF0BC6 /* StationsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA111294FB96900FF0BC6 /* StationsItemView.swift */; };
 		C5BEA115294FBA8C00FF0BC6 /* FavoritesItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA114294FBA8C00FF0BC6 /* FavoritesItemView.swift */; };
 		C5BEA117294FBDB600FF0BC6 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA116294FBDB600FF0BC6 /* FavoritesModel.swift */; };
+		C5F99CBF2958E999000450AE /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F99CBE2958E999000450AE /* SearchModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C5BEA114294FBA8C00FF0BC6 /* FavoritesItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesItemView.swift; sourceTree = "<group>"; };
 		C5BEA116294FBDB600FF0BC6 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
 		C5CD4F36295746BC002CBA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F99CBE2958E999000450AE /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				C5BEA106294F49AE00FF0BC6 /* CategoriesModel.swift */,
 				C5BEA116294FBDB600FF0BC6 /* FavoritesModel.swift */,
 				C5AFEDB0294FD71600BCCD21 /* StationsModel.swift */,
+				C5F99CBE2958E999000450AE /* SearchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
 				C5BEA10D294FB22200FF0BC6 /* StationsView.swift in Sources */,
 				C5BEA0FF294EA13400FF0BC6 /* CategoriesListView.swift in Sources */,
+				C5F99CBF2958E999000450AE /* SearchModel.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
 				C5BEA0F1294E86D700FF0BC6 /* MainTabView.swift in Sources */,
 			);
@@ -419,8 +423,8 @@
 				INFOPLIST_FILE = AppleMusicSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,9 +433,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.doker.AppleMusicSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,8 +456,8 @@
 				INFOPLIST_FILE = AppleMusicSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,9 +466,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.doker.AppleMusicSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

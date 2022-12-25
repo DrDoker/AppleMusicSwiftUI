@@ -22,7 +22,7 @@ enum AssetsImages: String {
 	case tokyo = "tokyo"
 	case rebecco = "rebecco"
 	case hitfm = "hitfm"
-	case rock = "rock"
+	case rock = "rockClassic"
 }
 
 enum SFSymbols: String {
