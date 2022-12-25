@@ -20,7 +20,7 @@ struct MainTabView: View {
 				}
 			SearchView()
 				.tabItem {
-					Label("Search", systemImage: SFSymbols.radio.rawValue)
+					Label("Search", systemImage: SFSymbols.search.rawValue)
 				}
 		}
 		.tint(.red)		

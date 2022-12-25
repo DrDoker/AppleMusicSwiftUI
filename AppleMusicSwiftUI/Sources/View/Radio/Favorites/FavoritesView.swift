@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoritesView: View {
 	
-	@State var favorites = FavoritesModel.data
+	@State private var favorites = FavoritesModel.data
 	var rows: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
 	
 	var body: some View {

@@ -14,8 +14,8 @@ struct PlayerView: View {
 				.resizable()
 				.scaledToFit()
 				.frame(
-					width: 55,
-					height: 55
+					width: 50,
+					height: 50
 				)
 				.cornerRadius(6)
 				.shadow(radius: 5)
@@ -40,7 +40,7 @@ struct PlayerView: View {
 			
 		}
 		.padding(.horizontal)
-		.frame(height: 70)
+		.frame(height: 65)
 		.overlay(Divider(), alignment: .bottom)
 		.background(.bar)
 	}
