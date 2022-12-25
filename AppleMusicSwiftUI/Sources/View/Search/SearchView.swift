@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SearchView: View {
-	@State private var searchText = ""
-	@State var stations = SearchModel.data
+	@State private var searchText = String()
+	@State private var stations = SearchModel.data
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 	
 	var body: some View {
@@ -23,21 +23,7 @@ struct SearchView: View {
 					
 					LazyVGrid(columns: columns) {
 						ForEach(stations, id: \.id) { item in
-							Image(item.image)
-								.resizable()
-								.scaledToFill()
-								.frame(minWidth: 0, maxWidth: .infinity)
-								.frame(height: 120)
-								.clipped()
-								.cornerRadius(10)
-								.shadow(radius: 3)
-								.overlay(alignment: .bottomLeading)  {
-									Text(item.title)
-										.font(.system(size: 18, weight: .bold))
-										.foregroundColor(.white)
-										.padding([.bottom, .leading, .trailing], 15)
-									
-								}
+							SearchItemView(title: item.title, image: item.image)
 						}
 					}
 					.padding(.horizontal)
