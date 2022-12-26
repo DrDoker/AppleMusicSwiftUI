@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StationsView: View {
 	
-	@State var stations = StationsModel.data
+	@State var stations = Stations.data
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
 	
 	var body: some View {

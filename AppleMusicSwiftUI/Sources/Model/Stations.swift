@@ -7,44 +7,44 @@
 
 import Foundation
 
-struct StationsModel {
+struct Stations {
 	let id = UUID()
 	var title: String
 	var description: String
 	var image: String
 }
 
-extension StationsModel {	
+extension Stations {	
 	static var data = [
-		StationsModel(
+		Stations(
 			title: "Apple Music 1",
 			description: "The new music that matters.",
 			image: AssetsImages.oneMusic.string),
-		StationsModel(
+		Stations(
 			title: "The Country Chart Show",
 			description: "Gentle indie pop and rock melodies that make moments better.",
 			image: AssetsImages.country.string),
-		StationsModel(
+		Stations(
 			title: "The Dotty Show",
 			description: "Festive classics and new favourites.",
 			image: AssetsImages.dotty.string),
-		StationsModel(
+		Stations(
 			title: "Jayde Donovan",
 			description: "Keeping your workout honest as we ramp up to the holidays.",
 			image: AssetsImages.jayde.string),
-		StationsModel(
+		Stations(
 			title: "Tokyo Highway Radio",
 			description: "Tokyo Highway: 2022.",
 			image: AssetsImages.tokyo.string),
-		StationsModel(
+		Stations(
 			title: "The Rebecca Judd Show",
 			description: "Rebecca introduces Manchester producer [ K S R ].",
 			image: AssetsImages.rebecco.string),
-		StationsModel(
+		Stations(
 			title: "Hit FM",
 			description: "Radio Station.",
 			image: AssetsImages.hitfm.string),
-		StationsModel(
+		Stations(
 			title: "Rock Classics Radio",
 			description: "Jenn is joined by Gavin Rossdale of Bush.",
 			image: AssetsImages.rockClassic.string)

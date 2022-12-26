@@ -9,8 +9,17 @@ import SwiftUI
 
 struct SearchView: View {
 	@State private var searchText = String()
-	@State private var stations = SearchModel.data
+	@State private var musicCategories = MusicCategories.data
+	
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+	
+	var searchResults: [MusicCategories] {
+		if searchText.isEmpty {
+			return musicCategories
+		} else {
+			return musicCategories.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
+		}
+	}
 	
 	var body: some View {
 		NavigationStack {
@@ -22,8 +31,11 @@ struct SearchView: View {
 						.padding(.leading)
 					
 					LazyVGrid(columns: columns) {
-						ForEach(stations, id: \.id) { item in
-							SearchItemView(title: item.title, image: item.image)
+						ForEach(searchResults, id: \.id) { item in
+							
+							NavigationLink(destination: CategorieDetail()) {
+								SearchItemView(title: item.title, image: item.image)
+							}
 						}
 					}
 					.padding(.horizontal)
@@ -35,7 +47,11 @@ struct SearchView: View {
 				text: $searchText,
 				placement: .navigationBarDrawer(displayMode: .always),
 				prompt: Strings.Search.searchPlaceholder
-			)
+			) {
+				ForEach(searchResults, id: \.id) { item in
+					SearchItemView(title: item.title, image: item.image).searchCompletion(item.title)
+				}
+			}
 			.navigationBarTitle(Strings.Search.navigationTitle)
 		}
 	}
@@ -46,3 +62,6 @@ struct SearchView_Previews: PreviewProvider {
 		SearchView()
 	}
 }
+
+
+
