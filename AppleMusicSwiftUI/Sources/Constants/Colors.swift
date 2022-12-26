@@ -12,4 +12,5 @@ enum Colors {
 	static let playerButton = Color.black
 	static let subtitle = Color.gray
 	static let searchItemTitle = Color.white
+	static let imageDescription = Color.white
 }
