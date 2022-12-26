@@ -11,7 +11,7 @@ struct SearchItemView: View {
 	var title: String
 	var image: String
 	
-    var body: some View {
+	var body: some View {
 		Image(image)
 			.resizable()
 			.scaledToFill()
@@ -22,15 +22,16 @@ struct SearchItemView: View {
 			.shadow(radius: 3)
 			.overlay(alignment: .bottomLeading)  {
 				Text(title)
-					.font(.system(size: 18, weight: .bold))
-					.foregroundColor(.white)
-					.padding([.bottom, .leading, .trailing], 15)
-				
-			}    }
+					.font(.system(size: 16, weight: .semibold))
+					.foregroundColor(Colors.searchItemTitle)
+					.padding(.vertical, 10)
+					.padding(.horizontal, 15)
+			}
+	}
 }
 
 struct SearchItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchItemView(title: "Spatial Audio", image: "spatial")
-    }
+	static var previews: some View {
+		SearchItemView(title: "Spatial Audio", image: "spatial")
+	}
 }

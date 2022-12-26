@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RadioView: View {
-
+	
 	var body: some View {
 		NavigationStack {
 			ScrollView(.vertical, showsIndicators: false) {
@@ -18,7 +18,7 @@ struct RadioView: View {
 				StationsView()
 			}
 			.padding(.bottom, 65)
-			.navigationTitle("Radio")
+			.navigationTitle(Strings.Radio.navigationTitle)
 		}
 	}
 }

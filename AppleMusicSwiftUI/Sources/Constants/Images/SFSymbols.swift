@@ -1,29 +1,11 @@
 //
-//  Images+Extensions.swift
+//  SFSymbols.swift
 //  AppleMusicSwiftUI
 //
-//  Created by Serhii  on 19/12/2022.
+//  Created by Serhii  on 26/12/2022.
 //
 
 import SwiftUI
-
-enum AssetsImages: String {
-	case cover = "cover"
-	
-	case indie = "indie"
-	case episode = "episode576"
-	case iconic = "iconic"
-	case relax = "relax"
-	
-	case oneMusic = "1music"
-	case country = "country"
-	case dotty = "dotty"
-	case jayde = "jayde"
-	case tokyo = "tokyo"
-	case rebecco = "rebecco"
-	case hitfm = "hitfm"
-	case rock = "rockClassic"
-}
 
 enum SFSymbols: String {
 	case play = "play.fill"
@@ -43,14 +25,15 @@ enum SFSymbols: String {
 	case collection = "person.2.crop.square.stack"
 	case authors = "music.quarternote.3"
 	case downloads = "arrow.down.circle"
+	
+	var string: String {
+		rawValue
+	}
 }
 
 extension Image {
-	init(with assetsImages: AssetsImages) {
-		self.init(assetsImages.rawValue)
-	}
-	
 	init(with symbols: SFSymbols) {
 		self.init(systemName: symbols.rawValue)
 	}
 }
+

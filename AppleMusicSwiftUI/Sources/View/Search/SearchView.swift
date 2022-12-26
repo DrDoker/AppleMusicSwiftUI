@@ -17,8 +17,8 @@ struct SearchView: View {
 			ScrollView(.vertical, showsIndicators: false) {
 				
 				VStack(alignment: .leading, spacing: 10) {
-					Text("Browse Categories")
-						.font(.system(size: 22, weight: .bold))
+					Text(Strings.Search.categoriesTitle)
+						.font(.system(size: 20, weight: .bold))
 						.padding(.leading)
 					
 					LazyVGrid(columns: columns) {
@@ -34,9 +34,9 @@ struct SearchView: View {
 			.searchable(
 				text: $searchText,
 				placement: .navigationBarDrawer(displayMode: .always),
-				prompt: "Search"
+				prompt: Strings.Search.searchPlaceholder
 			)
-			.navigationBarTitle("Search")
+			.navigationBarTitle(Strings.Search.navigationTitle)
 		}
 	}
 }

@@ -15,12 +15,14 @@ struct MediaLibraryView: View {
 	var body : some View {
 		NavigationStack {
 			LibraryView
-				.navigationTitle("Library")
+				.navigationTitle(Strings.MediaLibrary.navigationTitle)
 				.toolbar {
 					Button {
 						isEdit.toggle()
 					} label: {
-						Text(isEdit ? "Done" : "Edit")
+						Text(isEdit
+							 ? Strings.MediaLibrary.doneButtonTitle
+							 : Strings.MediaLibrary.editButtonTitle)
 					}
 				}
 		}
