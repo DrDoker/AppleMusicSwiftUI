@@ -13,21 +13,19 @@ struct CategoriesListView: View {
 	@Binding var listData: [CategoriesModel]
 	
 	var body: some View {
-		
-		LibraryList
-		
+		CategoriesList
 	}
 	
-	@ViewBuilder var LibraryList: some View {
+	@ViewBuilder var CategoriesList: some View {
 		if multiSelection.isEmpty {
 			VStack {
-				Text("Search your music?")
+				Text(Strings.MediaLibrary.emptyLibraryTitle)
 					.font(.title2)
 					.fontWeight(.bold)
 					.padding(.bottom, 1.0)
 				
-				Text("All your music which you buy in iTunes Store stores here.")
-					.foregroundColor(Color.gray)
+				Text(Strings.MediaLibrary.emptyLibrarySubtitle)
+					.foregroundColor(Colors.subtitle)
 				
 			}
 			.padding(.horizontal, 40)

@@ -12,7 +12,7 @@ struct StationsItemView: View {
 	var description: String
 	var image: String
 	
-    var body: some View {
+	var body: some View {
 		HStack {
 			Image(image)
 				.resizable()
@@ -25,7 +25,7 @@ struct StationsItemView: View {
 					.font(.system(size: 18))
 					.fontWeight(.medium)
 				Text(description)
-					.foregroundColor(Color.gray)
+					.foregroundColor(Colors.subtitle)
 			}
 			.padding(.leading)
 			
@@ -35,12 +35,14 @@ struct StationsItemView: View {
 		.padding(.horizontal)
 		.padding(.bottom, 10)
 		.overlay(Divider(), alignment: .bottom)
-		
-    }
+	}
 }
 
 struct VerticalGridItemView_Previews: PreviewProvider {
-    static var previews: some View {
-		StationsItemView(title: "Text", description: "Description Text", image: AssetsImages.rebecco.rawValue)
-    }
+	static var previews: some View {
+		StationsItemView(
+			title: "Text",
+			description: "Description Text",
+			image: AssetsImages.rebecco.string)
+	}
 }

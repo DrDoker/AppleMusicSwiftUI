@@ -20,7 +20,7 @@ struct PlayerView: View {
 				.cornerRadius(6)
 				.shadow(radius: 5)
 			
-			Text("Eminem - Lost Yourself")
+			Text(Strings.Player.songTitle)
 				.padding(.leading)
 			
 			Spacer()
@@ -36,7 +36,7 @@ struct PlayerView: View {
 				}
 			}
 			.imageScale(.large)
-			.foregroundColor(.black)
+			.foregroundColor(Colors.playerButton)
 			
 		}
 		.padding(.horizontal)

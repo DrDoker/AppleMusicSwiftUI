@@ -15,17 +15,36 @@ struct CategoriesModel {
 }
 
 extension CategoriesModel {
-
 	static var data = [
-		CategoriesModel(title: "Playlists", icon: SFSymbols.playlists.rawValue),
-		CategoriesModel(title: "Artists", icon: SFSymbols.artists.rawValue),
-		CategoriesModel(title: "Albums", icon: SFSymbols.albums.rawValue),
-		CategoriesModel(title: "Songs", icon: SFSymbols.songs.rawValue),
-		CategoriesModel(title: "Show and films", icon: SFSymbols.films.rawValue),
-		CategoriesModel(title: "Videoclips", icon: SFSymbols.videoclips.rawValue),
-		CategoriesModel(title: "Genres", icon: SFSymbols.genres.rawValue),
-		CategoriesModel(title: "Collection", icon: SFSymbols.collection.rawValue),
-		CategoriesModel(title: "Authors", icon: SFSymbols.authors.rawValue),
-		CategoriesModel(title: "Downloads", icon: SFSymbols.downloads.rawValue)
+		CategoriesModel(
+			title: "Playlists",
+			icon: SFSymbols.playlists.string),
+		CategoriesModel(
+			title: "Artists",
+			icon: SFSymbols.artists.string),
+		CategoriesModel(
+			title: "Albums",
+			icon: SFSymbols.albums.string),
+		CategoriesModel(
+			title: "Songs",
+			icon: SFSymbols.songs.string),
+		CategoriesModel(
+			title: "Show and films",
+			icon: SFSymbols.films.string),
+		CategoriesModel(
+			title: "Videoclips",
+			icon: SFSymbols.videoclips.string),
+		CategoriesModel(
+			title: "Genres",
+			icon: SFSymbols.genres.string),
+		CategoriesModel(
+			title: "Collection",
+			icon: SFSymbols.collection.string),
+		CategoriesModel(
+			title: "Authors",
+			icon: SFSymbols.authors.string),
+		CategoriesModel(
+			title: "Downloads",
+			icon: SFSymbols.downloads.string)
 	]
 }

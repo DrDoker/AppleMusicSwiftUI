@@ -16,7 +16,10 @@ struct FavoritesView: View {
 		ScrollView(.horizontal, showsIndicators: false) {
 			LazyHGrid(rows: rows) {
 				ForEach(favorites, id: \.id) { item in
-					FavoritesItemView(title: item.title, description: item.description, image: item.image)
+					FavoritesItemView(
+						title: item.title,
+						description: item.description,
+						image: item.image)
 				}
 			}
 			.padding(.horizontal)
@@ -25,7 +28,7 @@ struct FavoritesView: View {
 }
 
 struct HorizontalGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoritesView()
-    }
+	static var previews: some View {
+		FavoritesView()
+	}
 }

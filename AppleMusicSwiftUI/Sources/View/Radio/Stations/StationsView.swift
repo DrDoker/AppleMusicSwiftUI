@@ -14,14 +14,17 @@ struct StationsView: View {
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 10) {
-			Text("Stations")
+			Text(Strings.Radio.stationsTitle)
 				.font(.system(size: 28))
 				.fontWeight(.bold)
 				.padding(.leading)
 			
 			LazyVGrid(columns: columns) {
 				ForEach(stations, id: \.id) { item in
-					StationsItemView(title: item.title, description: item.description, image: item.image)
+					StationsItemView(
+						title: item.title,
+						description: item.description,
+						image: item.image)
 				}
 			}
 		}

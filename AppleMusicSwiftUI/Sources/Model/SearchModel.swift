@@ -15,21 +15,53 @@ struct SearchModel {
 
 extension SearchModel {
 	static var data = [
-		SearchModel(title: "Spatial Audio", image: "spatial"),
-		SearchModel(title: "Christmas", image: "christmas"),
-		SearchModel(title: "Replay'22", image: "replay"),
-		SearchModel(title: "Apple Music Live", image: "live"),
-		SearchModel(title: "Hits", image: "hits"),
-		SearchModel(title: "Acoustic", image: "acoustic"),
-		SearchModel(title: "Alternative", image: "alternative"),
-		SearchModel(title: "Classical", image: "classical"),
-		SearchModel(title: "Classic Rock", image: "classicRock"),
-		SearchModel(title: "Hard Rock", image: "hardRock"),
-		SearchModel(title: "Hip-Hop", image: "hipHop"),
-		SearchModel(title: "Metal", image: "metal"),
-		SearchModel(title: "Pop", image: "pop"),
-		SearchModel(title: "Reggae", image: "reggae"),
-		SearchModel(title: "Rock", image: "rock"),
-		SearchModel(title: "R&B/Soul", image: "soul")
+		SearchModel(
+			title: "Spatial Audio",
+			image: AssetsImages.spatial.string),
+		SearchModel(
+			title: "Christmas",
+			image: AssetsImages.christmas.string),
+		SearchModel(
+			title: "Replay'22",
+			image: AssetsImages.replay.string),
+		SearchModel(
+			title: "Apple Music Live",
+			image: AssetsImages.live.string),
+		SearchModel(
+			title: "Hits",
+			image: AssetsImages.hits.string),
+		SearchModel(
+			title: "Acoustic",
+			image: AssetsImages.acoustic.string),
+		SearchModel(
+			title: "Alternative",
+			image: AssetsImages.alternative.string),
+		SearchModel(
+			title: "Classical",
+			image: AssetsImages.classical.string),
+		SearchModel(
+			title: "Classic Rock",
+			image: AssetsImages.classicRock.string),
+		SearchModel(
+			title: "Hard Rock",
+			image: AssetsImages.hardRock.string),
+		SearchModel(
+			title: "Hip-Hop",
+			image: AssetsImages.hipHop.string),
+		SearchModel(
+			title: "Metal",
+			image: AssetsImages.metal.string),
+		SearchModel(
+			title: "Pop",
+			image: AssetsImages.pop.string),
+		SearchModel(
+			title: "Reggae",
+			image: AssetsImages.reggae.string),
+		SearchModel(
+			title: "Rock",
+			image: AssetsImages.rock.string),
+		SearchModel(
+			title: "R&B/Soul",
+			image: AssetsImages.soul.string)
 	]
 }
