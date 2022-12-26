@@ -14,6 +14,7 @@ struct ContentView: View {
 			PlayerView()
 				.offset(y: -49)
 		}
+		.ignoresSafeArea(.keyboard, edges: .bottom)
 	}
 }
 

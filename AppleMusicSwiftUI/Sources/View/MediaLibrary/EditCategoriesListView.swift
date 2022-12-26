@@ -11,7 +11,7 @@ struct EditCategoriesListView: View {
 	
 	@State private var editMode: EditMode = .active
 	@Binding var multiSelection: Set<UUID>
-	@Binding var listData: [CategoriesModel]
+	@Binding var listData: [Categories]
 	
 	var body: some View {
 		List(selection: $multiSelection) {
@@ -30,7 +30,7 @@ struct EditCategoriesListView: View {
 			fromOffsets: sourcePosition,
 			toOffset: destinationPosition
 		)
-		CategoriesModel.data = listData
+		Categories.data = listData
 	}
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MediaLibraryView: View {
-	@State private var listData = CategoriesModel.data
+	@State private var listData = Categories.data
 	@State private var isEdit = false
 	@State private var multiSelection = Set<UUID>()
 	

@@ -7,60 +7,60 @@
 
 import Foundation
 
-struct SearchModel {
+struct MusicCategories {
 	let id = UUID()
 	var title: String
 	var image: String
 }
 
-extension SearchModel {
+extension MusicCategories {
 	static var data = [
-		SearchModel(
+		MusicCategories(
 			title: "Spatial Audio",
 			image: AssetsImages.spatial.string),
-		SearchModel(
+		MusicCategories(
 			title: "Christmas",
 			image: AssetsImages.christmas.string),
-		SearchModel(
+		MusicCategories(
 			title: "Replay'22",
 			image: AssetsImages.replay.string),
-		SearchModel(
+		MusicCategories(
 			title: "Apple Music Live",
 			image: AssetsImages.live.string),
-		SearchModel(
+		MusicCategories(
 			title: "Hits",
 			image: AssetsImages.hits.string),
-		SearchModel(
+		MusicCategories(
 			title: "Acoustic",
 			image: AssetsImages.acoustic.string),
-		SearchModel(
+		MusicCategories(
 			title: "Alternative",
 			image: AssetsImages.alternative.string),
-		SearchModel(
+		MusicCategories(
 			title: "Classical",
 			image: AssetsImages.classical.string),
-		SearchModel(
+		MusicCategories(
 			title: "Classic Rock",
 			image: AssetsImages.classicRock.string),
-		SearchModel(
+		MusicCategories(
 			title: "Hard Rock",
 			image: AssetsImages.hardRock.string),
-		SearchModel(
+		MusicCategories(
 			title: "Hip-Hop",
 			image: AssetsImages.hipHop.string),
-		SearchModel(
+		MusicCategories(
 			title: "Metal",
 			image: AssetsImages.metal.string),
-		SearchModel(
+		MusicCategories(
 			title: "Pop",
 			image: AssetsImages.pop.string),
-		SearchModel(
+		MusicCategories(
 			title: "Reggae",
 			image: AssetsImages.reggae.string),
-		SearchModel(
+		MusicCategories(
 			title: "Rock",
 			image: AssetsImages.rock.string),
-		SearchModel(
+		MusicCategories(
 			title: "R&B/Soul",
 			image: AssetsImages.soul.string)
 	]
