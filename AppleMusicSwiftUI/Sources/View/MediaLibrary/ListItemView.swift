@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListItemView: View {
 	
-	var categori: Categories
+	var categori: LibraryCategories
 	
 	var body: some View {
 		HStack(spacing: 10) {
@@ -28,6 +28,6 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
 	static var previews: some View {
-		ListItemView(categori: Categories(title: "Playlists", icon: SFSymbols.playlists.string))
+		ListItemView(categori: LibraryCategories(title: "Playlists", icon: SFSymbols.playlists.string))
 	}
 }

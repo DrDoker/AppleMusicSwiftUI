@@ -10,7 +10,7 @@ import SwiftUI
 struct CategoriesListView: View {
 	
 	@Binding var multiSelection: Set<UUID>
-	@Binding var listData: [Categories]
+	@Binding var listData: [LibraryCategories]
 	
 	var body: some View {
 		CategoriesList

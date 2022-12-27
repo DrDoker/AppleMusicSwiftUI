@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StationsView: View {
 	
-	@State var stations = Stations.data
+	private var stations = Stations.data
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
 	
 	var body: some View {
@@ -26,6 +26,7 @@ struct StationsView: View {
 						description: item.description,
 						image: item.image)
 				}
+				
 			}
 		}
 	}

@@ -11,22 +11,28 @@ struct MusicCategories {
 	let id = UUID()
 	var title: String
 	var image: String
+	var favorites: [FavoriteCategories]?
+	var first: HorizontalCategori?
+	var second: HorizontalCategori?
 }
 
 extension MusicCategories {
 	static var data = [
 		MusicCategories(
-			title: "Spatial Audio",
-			image: AssetsImages.spatial.string),
+			title: "Apple Music Live",
+			image: AssetsImages.live.string,
+			favorites: FavoriteCategories.appleMusicLive,
+			first: HorizontalCategori.watch,
+			second: HorizontalCategori.listen),
 		MusicCategories(
 			title: "Christmas",
 			image: AssetsImages.christmas.string),
 		MusicCategories(
+			title: "Spatial Audio",
+			image: AssetsImages.spatial.string),
+		MusicCategories(
 			title: "Replay'22",
 			image: AssetsImages.replay.string),
-		MusicCategories(
-			title: "Apple Music Live",
-			image: AssetsImages.live.string),
 		MusicCategories(
 			title: "Hits",
 			image: AssetsImages.hits.string),

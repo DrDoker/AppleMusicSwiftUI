@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
 	@State private var searchText = String()
-	@State private var musicCategories = MusicCategories.data
+	private var musicCategories = MusicCategories.data
 	
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 	
@@ -33,7 +33,7 @@ struct SearchView: View {
 					LazyVGrid(columns: columns) {
 						ForEach(searchResults, id: \.id) { item in
 							
-							NavigationLink(destination: CategorieDetail()) {
+							NavigationLink(destination: CategorieDetailView(musicCategories: item)) {
 								SearchItemView(title: item.title, image: item.image)
 							}
 						}

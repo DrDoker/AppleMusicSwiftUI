@@ -8,42 +8,42 @@
 import Foundation
 import SwiftUI
 
-struct Categories {
+struct LibraryCategories {
 	var title: String
 	var icon: String
 	let id = UUID()
 }
 
-extension Categories {
+extension LibraryCategories {
 	static var data = [
-		Categories(
+		LibraryCategories(
 			title: "Playlists",
 			icon: SFSymbols.playlists.string),
-		Categories(
+		LibraryCategories(
 			title: "Artists",
 			icon: SFSymbols.artists.string),
-		Categories(
+		LibraryCategories(
 			title: "Albums",
 			icon: SFSymbols.albums.string),
-		Categories(
+		LibraryCategories(
 			title: "Songs",
 			icon: SFSymbols.songs.string),
-		Categories(
+		LibraryCategories(
 			title: "Show and films",
 			icon: SFSymbols.films.string),
-		Categories(
+		LibraryCategories(
 			title: "Videoclips",
 			icon: SFSymbols.videoclips.string),
-		Categories(
+		LibraryCategories(
 			title: "Genres",
 			icon: SFSymbols.genres.string),
-		Categories(
+		LibraryCategories(
 			title: "Collection",
 			icon: SFSymbols.collection.string),
-		Categories(
+		LibraryCategories(
 			title: "Authors",
 			icon: SFSymbols.authors.string),
-		Categories(
+		LibraryCategories(
 			title: "Downloads",
 			icon: SFSymbols.downloads.string)
 	]
