@@ -26,6 +26,7 @@ struct StationsView: View {
 						description: item.description,
 						image: item.image)
 				}
+				
 			}
 		}
 	}
