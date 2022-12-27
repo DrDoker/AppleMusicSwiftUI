@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C524837E295B0FB5003009EB /* ClosePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524837D295B0FB5003009EB /* ClosePlayerView.swift */; };
+		C5248389295B2DCC003009EB /* FullPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248388295B2DCC003009EB /* FullPlayerView.swift */; };
+		C524838C295B5422003009EB /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524838B295B5422003009EB /* CustomButtonView.swift */; };
+		C524838E295B7EC2003009EB /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524838D295B7EC2003009EB /* CircleButtonView.swift */; };
+		C5248390295B8164003009EB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524838F295B8164003009EB /* GradientView.swift */; };
+		C5248392295B8263003009EB /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248391295B8263003009EB /* PlayButtonView.swift */; };
+		C5248394295B8596003009EB /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248393295B8596003009EB /* CoverView.swift */; };
+		C5248398295B99F3003009EB /* MusicControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248397295B99F3003009EB /* MusicControlView.swift */; };
+		C524839C295B9C8B003009EB /* SongInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524839B295B9C8B003009EB /* SongInfoView.swift */; };
 		C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */; };
 		C584ED16294E7E850019AF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED15294E7E850019AF5E /* Assets.xcassets */; };
 		C584ED19294E7E850019AF5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED18294E7E850019AF5E /* Preview Assets.xcassets */; };
@@ -31,7 +40,7 @@
 		C5BEA0FD294E8A7E00FF0BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */; };
 		C5BEA0FF294EA13400FF0BC6 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA0FE294EA13400FF0BC6 /* CategoriesListView.swift */; };
 		C5BEA101294EA2D700FF0BC6 /* EditCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA100294EA2D700FF0BC6 /* EditCategoriesListView.swift */; };
-		C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */; };
+		C5BEA104294EAB9F00FF0BC6 /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA103294EAB9F00FF0BC6 /* MiniPlayerView.swift */; };
 		C5BEA107294F49AE00FF0BC6 /* LibraryCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA106294F49AE00FF0BC6 /* LibraryCategories.swift */; };
 		C5BEA109294F521100FF0BC6 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA108294F521100FF0BC6 /* ListItemView.swift */; };
 		C5BEA10D294FB22200FF0BC6 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEA10C294FB22200FF0BC6 /* StationsView.swift */; };
@@ -43,6 +52,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C524837D295B0FB5003009EB /* ClosePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosePlayerView.swift; sourceTree = "<group>"; };
+		C5248388295B2DCC003009EB /* FullPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerView.swift; sourceTree = "<group>"; };
+		C524838B295B5422003009EB /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		C524838D295B7EC2003009EB /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		C524838F295B8164003009EB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C5248391295B8263003009EB /* PlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
+		C5248393295B8596003009EB /* CoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
+		C5248397295B99F3003009EB /* MusicControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlView.swift; sourceTree = "<group>"; };
+		C524839B295B9C8B003009EB /* SongInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfoView.swift; sourceTree = "<group>"; };
 		C584ED0E294E7E840019AF5E /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
 		C584ED15294E7E850019AF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +86,7 @@
 		C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5BEA0FE294EA13400FF0BC6 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
 		C5BEA100294EA2D700FF0BC6 /* EditCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCategoriesListView.swift; sourceTree = "<group>"; };
-		C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C5BEA103294EAB9F00FF0BC6 /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
 		C5BEA106294F49AE00FF0BC6 /* LibraryCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCategories.swift; sourceTree = "<group>"; };
 		C5BEA108294F521100FF0BC6 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		C5BEA10C294FB22200FF0BC6 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
@@ -91,6 +109,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C524837B295B0E8B003009EB /* HorizontalCategori */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADEFBF295A442F00829CEB /* HorizontalCategoriView.swift */,
+				C5ADEFC1295A4A2E00829CEB /* HorizontalCategoriItemView.swift */,
+			);
+			path = HorizontalCategori;
+			sourceTree = "<group>";
+		};
+		C524837C295B0EB8003009EB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C524838A295B53FC003009EB /* Components */,
+				C5BEA103294EAB9F00FF0BC6 /* MiniPlayerView.swift */,
+				C5248388295B2DCC003009EB /* FullPlayerView.swift */,
+				C524837D295B0FB5003009EB /* ClosePlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C524838A295B53FC003009EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5248399295B9C0B003009EB /* BaseComponents */,
+				C524839A295B9C2E003009EB /* PlayerComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C5248399295B9C0B003009EB /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C524838B295B5422003009EB /* CustomButtonView.swift */,
+				C524838D295B7EC2003009EB /* CircleButtonView.swift */,
+				C524838F295B8164003009EB /* GradientView.swift */,
+				C5248391295B8263003009EB /* PlayButtonView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		C524839A295B9C2E003009EB /* PlayerComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C5248393295B8596003009EB /* CoverView.swift */,
+				C5248397295B99F3003009EB /* MusicControlView.swift */,
+				C524839B295B9C8B003009EB /* SongInfoView.swift */,
+			);
+			path = PlayerComponents;
+			sourceTree = "<group>";
+		};
 		C584ED05294E7E840019AF5E = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +206,7 @@
 			children = (
 				C5ADEFB6295A296600829CEB /* CategorieDetailView.swift */,
 				C5ADEFBC295A322A00829CEB /* FavoriteCategories */,
-				C5ADEFBF295A442F00829CEB /* HorizontalCategoriView.swift */,
-				C5ADEFC1295A4A2E00829CEB /* HorizontalCategoriItemView.swift */,
+				C524837B295B0E8B003009EB /* HorizontalCategori */,
 			);
 			path = Categorie;
 			sourceTree = "<group>";
@@ -200,7 +267,7 @@
 			children = (
 				C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */,
 				C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */,
-				C5BEA103294EAB9F00FF0BC6 /* PlayerView.swift */,
+				C524837C295B0EB8003009EB /* Player */,
 				C5BEA0F6294E890700FF0BC6 /* MediaLibrary */,
 				C5BEA0FA294E899E00FF0BC6 /* Radio */,
 				C5BEA0FB294E89BD00FF0BC6 /* Search */,
@@ -330,16 +397,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5BEA104294EAB9F00FF0BC6 /* PlayerView.swift in Sources */,
+				C5BEA104294EAB9F00FF0BC6 /* MiniPlayerView.swift in Sources */,
+				C524838C295B5422003009EB /* CustomButtonView.swift in Sources */,
 				C5ADEFC4295A533000829CEB /* HorizontalCategoriList.swift in Sources */,
+				C5248392295B8263003009EB /* PlayButtonView.swift in Sources */,
+				C5248398295B99F3003009EB /* MusicControlView.swift in Sources */,
 				C5ADEFC6295A560600829CEB /* HorizontalCategori.swift in Sources */,
 				C5BEA115294FBA8C00FF0BC6 /* FavoritesItemView.swift in Sources */,
 				C5BEA0F5294E882900FF0BC6 /* SearchView.swift in Sources */,
 				C5ADEFAB29590F5200829CEB /* SearchItemView.swift in Sources */,
 				C5BEA117294FBDB600FF0BC6 /* Favorites.swift in Sources */,
+				C5248389295B2DCC003009EB /* FullPlayerView.swift in Sources */,
 				C5BEA10F294FB51B00FF0BC6 /* FavoritesView.swift in Sources */,
 				C5ADEFB7295A296600829CEB /* CategorieDetailView.swift in Sources */,
 				C5AFEDB329511A0500BCCD21 /* AssetsImages.swift in Sources */,
+				C524837E295B0FB5003009EB /* ClosePlayerView.swift in Sources */,
 				C5ADEFC2295A4A2E00829CEB /* HorizontalCategoriItemView.swift in Sources */,
 				C5BEA0F3294E87A400FF0BC6 /* RadioView.swift in Sources */,
 				C5ADEFAE2959160500829CEB /* SFSymbols.swift in Sources */,
@@ -350,8 +422,12 @@
 				C5ADEFC0295A442F00829CEB /* HorizontalCategoriView.swift in Sources */,
 				C5ADEFB22959221B00829CEB /* Colors.swift in Sources */,
 				C5BEA112294FB96900FF0BC6 /* StationsItemView.swift in Sources */,
+				C524838E295B7EC2003009EB /* CircleButtonView.swift in Sources */,
 				C5AFEDB1294FD71600BCCD21 /* Stations.swift in Sources */,
+				C524839C295B9C8B003009EB /* SongInfoView.swift in Sources */,
+				C5248394295B8596003009EB /* CoverView.swift in Sources */,
 				C5BEA107294F49AE00FF0BC6 /* LibraryCategories.swift in Sources */,
+				C5248390295B8164003009EB /* GradientView.swift in Sources */,
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
 				C5BEA10D294FB22200FF0BC6 /* StationsView.swift in Sources */,
 				C5ADEFBB295A320700829CEB /* FavoriteCategoriesView.swift in Sources */,
