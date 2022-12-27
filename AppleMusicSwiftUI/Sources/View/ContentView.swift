@@ -11,8 +11,7 @@ struct ContentView: View {
 	var body: some View {
 		ZStack(alignment: .bottom) {
 			MainTabView()
-			PlayerView()
-				.offset(y: -49)
+			MiniPlayerView()
 		}
 		.ignoresSafeArea(.keyboard, edges: .bottom)
 	}

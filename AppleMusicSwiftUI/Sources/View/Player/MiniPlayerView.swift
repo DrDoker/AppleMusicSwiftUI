@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct PlayerView: View {
+struct MiniPlayerView: View {
+	@State private var isPresented = false
+	
 	var body: some View {
 		HStack(alignment: .center) {
 			Image(with: .cover)
@@ -43,11 +45,18 @@ struct PlayerView: View {
 		.frame(height: 65)
 		.overlay(Divider(), alignment: .bottom)
 		.background(.bar)
+		.offset(y: -49)
+		.onTapGesture {
+			isPresented.toggle()
+		}
+		
+		ClosePlayerView(isPresented: $isPresented)
+			.animation(.easeInOut, value: isPresented)
 	}
 }
 
 struct PlayerView_Previews: PreviewProvider {
 	static var previews: some View {
-		PlayerView()
+		MiniPlayerView()
 	}
 }
