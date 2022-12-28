@@ -36,6 +36,8 @@ struct FullPlayerView: View {
 					musicProgress: $musicProgress,
 					volumeSettings: $volumeSettings)
 				
+				Spacer()
+				
 			}
 			.padding(.horizontal, 30)
 			.padding(.top, 60)

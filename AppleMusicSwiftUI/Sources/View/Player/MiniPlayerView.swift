@@ -47,11 +47,14 @@ struct MiniPlayerView: View {
 		.background(.bar)
 		.offset(y: -49)
 		.onTapGesture {
-			isPresented.toggle()
+			withAnimation {
+				isPresented.toggle()
+			}
+			
 		}
 		
 		ClosePlayerView(isPresented: $isPresented)
-			.animation(.easeInOut, value: isPresented)
+			.animation(.default, value: isPresented)
 	}
 }
 

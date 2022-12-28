@@ -21,53 +21,52 @@ struct MusicControlView: View {
 					Spacer()
 					Text("4:54")
 				}
-				.foregroundColor(.white)
+				.foregroundColor(Colors.musicControl)
 			}
 			.padding(.bottom, 30)
 			
-			
 			HStack(spacing: 70) {
-				CustomButtonView(image: "backward.fill", size: 40)
+				CustomButtonView(image: SFSymbols.backward.string, size: 40)
 				PlayButtonView(isPlay: $isPlay, size: 40) {
 					isPlay.toggle()
 				}
-				CustomButtonView(image: "forward.fill", size: 40)
+				CustomButtonView(image: SFSymbols.forward.string, size: 40)
 			}
 			.shadow(radius: 8)
-			.foregroundColor(.white)
+			.foregroundColor(Colors.musicControl)
 			.padding(.bottom, 40)
 			
 			HStack(spacing: 20) {
-				Image(systemName: "speaker.fill")
+				Image(with: .minSpeaker)
 					.frame(width: 20, height: 20)
-					.foregroundColor(.white)
+					.foregroundColor(Colors.musicControl)
 					.opacity(0.5)
 				
 				Slider(value: $musicProgress)
 				
-				Image(systemName: "speaker.wave.3.fill")
+				Image(with: .maxSpeaker)
 					.frame(width: 20, height: 20)
-					.foregroundColor(.white)
+					.foregroundColor(Colors.musicControl)
 					.opacity(0.5)
 			}
 			.padding(.bottom, 20)
 			
 			HStack(spacing: 60) {
-				CustomButtonView(image: "quote.bubble", size: 20) {
+				CustomButtonView(image: SFSymbols.quote.string, size: 20) {
 					print("Text")
 				}
-				CustomButtonView(image: "airplayaudio", size: 20) {
+				CustomButtonView(image: SFSymbols.airplay.string, size: 20) {
 					print("Air")
 				}
-				CustomButtonView(image: "list.bullet", size: 20) {
+				CustomButtonView(image: SFSymbols.list.string, size: 20) {
 					print("List")
 				}
 			}
-			.foregroundColor(.white)
+			.foregroundColor(Colors.musicControl)
 			.opacity(0.8)
 			.shadow(radius: 8)
 		}
-		.tint(.white)
+		.tint(Colors.musicControl)
 	}
 }
 

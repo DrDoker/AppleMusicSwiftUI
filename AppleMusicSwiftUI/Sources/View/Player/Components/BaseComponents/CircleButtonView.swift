@@ -28,7 +28,7 @@ struct CircleButtonView: View {
 					.resizable()
 					.aspectRatio(contentMode: .fit)
 					.frame(width: imageSize)
-					.foregroundColor(.white)
+					.foregroundColor(Colors.musicControl)
 			}
 		}
     }

@@ -11,13 +11,13 @@ struct SongInfoView: View {
 	var body: some View {
 		HStack {
 			VStack(alignment: .leading, spacing: 2) {
-				Text("Lost Yourself")
+				Text(Strings.Player.artist)
 					.font(.system(size: 24, weight: .semibold))
-					.foregroundColor(.white)
+					.foregroundColor(Colors.songInfo)
 				
-				Text("Eminem")
+				Text(Strings.Player.song)
 					.font(.system(size: 22, weight: .regular))
-					.foregroundColor(.white)
+					.foregroundColor(Colors.songInfo)
 					.opacity(0.85)
 			}
 			Spacer()
@@ -26,19 +26,21 @@ struct SongInfoView: View {
 				Button(role: .destructive) {
 					print("Trash")
 				} label: {
-					Text("Trash")
-					Image(systemName: "trash")
+					Text(Strings.MenuPlayer.trash)
+					Image(with: .trash)
 				}
 				Button {
 					print("Like")
 				} label: {
-					Text("Like")
-					Image(systemName: "heart")
+					Text(Strings.MenuPlayer.like)
+					Image(with: .heart)
 				}
 			} label: {
-				CircleButtonView(image: "ellipsis", imageSize: 20, size: 30)
+				CircleButtonView(
+					image: SFSymbols.ellipsis.string,
+					imageSize: 20,
+					size: 30)
 			}
-			
 		}
 	}
 }
