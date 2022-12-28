@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SongInfoView: View {
-    var body: some View {
+	var body: some View {
 		HStack {
 			VStack(alignment: .leading, spacing: 2) {
 				Text("Lost Yourself")
@@ -21,16 +21,33 @@ struct SongInfoView: View {
 					.opacity(0.85)
 			}
 			Spacer()
-			CircleButtonView(image: "ellipsis", imageSize: 20, size: 30)
+			
+			Menu {
+				Button(role: .destructive) {
+					print("Trash")
+				} label: {
+					Text("Trash")
+					Image(systemName: "trash")
+				}
+				Button {
+					print("Like")
+				} label: {
+					Text("Like")
+					Image(systemName: "heart")
+				}
+			} label: {
+				CircleButtonView(image: "ellipsis", imageSize: 20, size: 30)
+			}
+			
 		}
-    }
+	}
 }
 
 struct SongInfoView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		ZStack {
 			Color.red
 			SongInfoView()
 		}
-    }
+	}
 }
