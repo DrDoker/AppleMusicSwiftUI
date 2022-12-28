@@ -22,6 +22,10 @@ struct MainTabView: View {
 				.tabItem {
 					Label(Strings.TabView.searchTab, systemImage: SFSymbols.search.string)
 				}
+			SearchUIKitView()
+				.tabItem {
+					Label("UIKit", systemImage: SFSymbols.search.string)
+				}
 		}
 		.tint(Colors.main)		
 	}

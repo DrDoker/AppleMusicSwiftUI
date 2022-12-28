@@ -16,6 +16,9 @@
 		C5248394295B8596003009EB /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248393295B8596003009EB /* CoverView.swift */; };
 		C5248398295B99F3003009EB /* MusicControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248397295B99F3003009EB /* MusicControlView.swift */; };
 		C524839C295B9C8B003009EB /* SongInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524839B295B9C8B003009EB /* SongInfoView.swift */; };
+		C5378F1F295CE31700F341A5 /* SearchUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5378F1E295CE31700F341A5 /* SearchUIKitView.swift */; };
+		C5378F21295CE3DC00F341A5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5378F20295CE3DC00F341A5 /* SearchViewController.swift */; };
+		C5378F24295CE64500F341A5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5378F23295CE64500F341A5 /* SnapKit */; };
 		C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */; };
 		C584ED16294E7E850019AF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED15294E7E850019AF5E /* Assets.xcassets */; };
 		C584ED19294E7E850019AF5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C584ED18294E7E850019AF5E /* Preview Assets.xcassets */; };
@@ -61,6 +64,8 @@
 		C5248393295B8596003009EB /* CoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		C5248397295B99F3003009EB /* MusicControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlView.swift; sourceTree = "<group>"; };
 		C524839B295B9C8B003009EB /* SongInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfoView.swift; sourceTree = "<group>"; };
+		C5378F1E295CE31700F341A5 /* SearchUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIKitView.swift; sourceTree = "<group>"; };
+		C5378F20295CE3DC00F341A5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C584ED0E294E7E840019AF5E /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C584ED11294E7E840019AF5E /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
 		C584ED15294E7E850019AF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5378F24295CE64500F341A5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +163,15 @@
 				C524839B295B9C8B003009EB /* SongInfoView.swift */,
 			);
 			path = PlayerComponents;
+			sourceTree = "<group>";
+		};
+		C5378F1D295CE2D300F341A5 /* UIKitSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C5378F1E295CE31700F341A5 /* SearchUIKitView.swift */,
+				C5378F20295CE3DC00F341A5 /* SearchViewController.swift */,
+			);
+			path = UIKitSearch;
 			sourceTree = "<group>";
 		};
 		C584ED05294E7E840019AF5E = {
@@ -267,6 +282,7 @@
 			children = (
 				C5BEA0FC294E8A7E00FF0BC6 /* ContentView.swift */,
 				C5BEA0F0294E86D700FF0BC6 /* MainTabView.swift */,
+				C5378F1D295CE2D300F341A5 /* UIKitSearch */,
 				C524837C295B0EB8003009EB /* Player */,
 				C5BEA0F6294E890700FF0BC6 /* MediaLibrary */,
 				C5BEA0FA294E899E00FF0BC6 /* Radio */,
@@ -343,6 +359,9 @@
 			dependencies = (
 			);
 			name = AppleMusicSwiftUI;
+			packageProductDependencies = (
+				C5378F23295CE64500F341A5 /* SnapKit */,
+			);
 			productName = AppleMusicSwiftUI;
 			productReference = C584ED0E294E7E840019AF5E /* AppleMusicSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -371,6 +390,9 @@
 				Base,
 			);
 			mainGroup = C584ED05294E7E840019AF5E;
+			packageReferences = (
+				C5378F22295CE64500F341A5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C584ED0F294E7E840019AF5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,7 +453,9 @@
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
 				C5BEA10D294FB22200FF0BC6 /* StationsView.swift in Sources */,
 				C5ADEFBB295A320700829CEB /* FavoriteCategoriesView.swift in Sources */,
+				C5378F1F295CE31700F341A5 /* SearchUIKitView.swift in Sources */,
 				C5BEA0FF294EA13400FF0BC6 /* CategoriesListView.swift in Sources */,
+				C5378F21295CE3DC00F341A5 /* SearchViewController.swift in Sources */,
 				C5ADEFBE295A330400829CEB /* FavoriteCategoriesItemView.swift in Sources */,
 				C5F99CBF2958E999000450AE /* MusicCategories.swift in Sources */,
 				C584ED12294E7E840019AF5E /* AppleMusicSwiftUIApp.swift in Sources */,
@@ -645,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5378F22295CE64500F341A5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5378F23295CE64500F341A5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5378F22295CE64500F341A5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C584ED06294E7E840019AF5E /* Project object */;
 }
