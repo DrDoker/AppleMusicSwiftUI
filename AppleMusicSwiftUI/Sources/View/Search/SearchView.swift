@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
 	@State private var searchText = String()
-	private var musicCategories = MusicCategories.data
+	@State private var musicCategories = MusicCategories.data
 	
 	var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 	
