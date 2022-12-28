@@ -8,29 +8,48 @@
 import SwiftUI
 
 struct SongInfoView: View {
-    var body: some View {
+	var body: some View {
 		HStack {
 			VStack(alignment: .leading, spacing: 2) {
-				Text("Lost Yourself")
+				Text(Strings.Player.artist)
 					.font(.system(size: 24, weight: .semibold))
-					.foregroundColor(.white)
+					.foregroundColor(Colors.songInfo)
 				
-				Text("Eminem")
+				Text(Strings.Player.song)
 					.font(.system(size: 22, weight: .regular))
-					.foregroundColor(.white)
+					.foregroundColor(Colors.songInfo)
 					.opacity(0.85)
 			}
 			Spacer()
-			CircleButtonView(image: "ellipsis", imageSize: 20, size: 30)
+			
+			Menu {
+				Button(role: .destructive) {
+					print("Trash")
+				} label: {
+					Text(Strings.MenuPlayer.trash)
+					Image(with: .trash)
+				}
+				Button {
+					print("Like")
+				} label: {
+					Text(Strings.MenuPlayer.like)
+					Image(with: .heart)
+				}
+			} label: {
+				CircleButtonView(
+					image: SFSymbols.ellipsis.string,
+					imageSize: 20,
+					size: 30)
+			}
 		}
-    }
+	}
 }
 
 struct SongInfoView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		ZStack {
 			Color.red
 			SongInfoView()
 		}
-    }
+	}
 }

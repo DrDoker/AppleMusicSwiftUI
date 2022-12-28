@@ -9,8 +9,19 @@ import SwiftUI
 
 enum SFSymbols: String {
 	case play = "play.fill"
+	case pause = "pause.fill"
+	case backward = "backward.fill"
 	case forward = "forward.fill"
+	case heart = "heart"
+	case trash = "trash"
+	case ellipsis = "ellipsis"
+	case minSpeaker = "speaker.fill"
+	case maxSpeaker = "speaker.wave.3.fill"
 	
+	case quote = "quote.bubble"
+	case airplay = "airplayaudio"
+	case list = "list.bullet"
+		
 	case library = "play.square.stack.fill"
 	case radio = "dot.radiowaves.left.and.right"
 	case search = "magnifyingglass"

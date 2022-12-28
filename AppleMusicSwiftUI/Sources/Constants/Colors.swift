@@ -13,4 +13,6 @@ enum Colors {
 	static let subtitle = Color.gray
 	static let searchItemTitle = Color.white
 	static let imageDescription = Color.white
+	static let songInfo = Color.white
+	static let musicControl = Color.white
 }

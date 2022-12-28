@@ -18,7 +18,7 @@ struct CoverView: View {
 				.scaledToFit()
 				.cornerRadius(15)
 				.frame(width: isPlay ? 330 : 270, height: isPlay ? 330 : 270)
-				.animation(.default)
+				.animation(.default, value: isPlay)
 				.shadow(radius: 10)
 		}
 		.frame(height: 330)

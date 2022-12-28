@@ -16,16 +16,19 @@ struct PlayButtonView: View {
 		Button {
 			action()
 		} label: {
-			Image(systemName: isPlay ? "pause.fill" : "play.fill")
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-				.frame(width: size, height: size)
+			Image(
+				systemName: isPlay
+				? SFSymbols.pause.string
+				: SFSymbols.play.string)
+			.resizable()
+			.aspectRatio(contentMode: .fit)
+			.frame(width: size, height: size)
 		}
 	}
 }
 
 struct PlayButtonView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		PlayButtonView(isPlay: .constant(true), size: 40)
-    }
+	}
 }

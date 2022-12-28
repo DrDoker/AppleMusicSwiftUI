@@ -15,7 +15,17 @@ enum Strings {
 	}
 	
 	enum Player {
-		static let songTitle = "Eminem - Lost Yourself"
+		static let artist = "Eminem"
+		static let song = "Lost Yourself"
+
+		static var songTitle: String {
+			Strings.Player.artist + "-" + Strings.Player.song
+		}
+	}
+	
+	enum MenuPlayer {
+		static let trash = "Trash"
+		static let like = "Like"
 	}
 
 	enum MediaLibrary {
