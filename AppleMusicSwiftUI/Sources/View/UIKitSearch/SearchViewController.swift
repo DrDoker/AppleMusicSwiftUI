@@ -27,6 +27,10 @@ class SearchViewController: UIViewController {
 		collectionView.register(
 			SearchCollectionViewCell.self,
 			forCellWithReuseIdentifier: SearchCollectionViewCell.identifier)
+		collectionView.register(
+			SearchCellHeader.self,
+			forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+			withReuseIdentifier: SearchCellHeader.identifier)
 		collectionView.delegate = self
 		collectionView.dataSource = self
 		collectionView.showsVerticalScrollIndicator = false
@@ -59,7 +63,7 @@ class SearchViewController: UIViewController {
 	private func setupLayout() {
 		collectionView.snp.makeConstraints { make in
 			make.top.equalTo(view)
-			make.bottom.equalTo(view).offset(-70)
+			make.bottom.equalTo(view).offset(-65)
 			make.leading.equalTo(view).offset(16)
 			make.trailing.equalTo(view).offset(-16)
 		}
@@ -78,12 +82,19 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.identifier, for: indexPath) as? SearchCollectionViewCell
 		
-		guard let cell = cell else { return UICollectionViewCell()}
+		guard let cell = cell else { return UICollectionViewCell() }
 	
 		cell.categoriImage.image = UIImage(named: model[indexPath.item].image)
 		cell.categoriTitle.text = model[indexPath.item].title
 		
 		return cell
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+		let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SearchCellHeader.identifier, for: indexPath) as? SearchCellHeader
+		guard let header = header else { return SearchCellHeader() }
+		header.headerTitle.text = Strings.Search.categoriesTitle
+		return header
 	}
 }
 
@@ -100,5 +111,9 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 		8
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+		CGSize(width: collectionView.frame.width, height: 34)
 	}
 }

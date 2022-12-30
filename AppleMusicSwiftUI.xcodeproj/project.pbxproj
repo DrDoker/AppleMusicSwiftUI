@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51BEFAC295F88D500D05637 /* SearchCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BEFAB295F88D500D05637 /* SearchCellHeader.swift */; };
 		C524837E295B0FB5003009EB /* ClosePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524837D295B0FB5003009EB /* ClosePlayerView.swift */; };
 		C5248389295B2DCC003009EB /* FullPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248388295B2DCC003009EB /* FullPlayerView.swift */; };
 		C524838C295B5422003009EB /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524838B295B5422003009EB /* CustomButtonView.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C51BEFAB295F88D500D05637 /* SearchCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellHeader.swift; sourceTree = "<group>"; };
 		C524837D295B0FB5003009EB /* ClosePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosePlayerView.swift; sourceTree = "<group>"; };
 		C5248388295B2DCC003009EB /* FullPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerView.swift; sourceTree = "<group>"; };
 		C524838B295B5422003009EB /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				C5378F1E295CE31700F341A5 /* UIKitSearchView.swift */,
 				C5378F20295CE3DC00F341A5 /* SearchViewController.swift */,
 				C5378F25295D06A800F341A5 /* SearchCollectionViewCell.swift */,
+				C51BEFAB295F88D500D05637 /* SearchCellHeader.swift */,
 			);
 			path = UIKitSearch;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				C5BEA107294F49AE00FF0BC6 /* LibraryCategories.swift in Sources */,
 				C5248390295B8164003009EB /* GradientView.swift in Sources */,
 				C5BEA0ED294E861900FF0BC6 /* MediaLibraryView.swift in Sources */,
+				C51BEFAC295F88D500D05637 /* SearchCellHeader.swift in Sources */,
 				C5BEA10D294FB22200FF0BC6 /* StationsView.swift in Sources */,
 				C5ADEFBB295A320700829CEB /* FavoriteCategoriesView.swift in Sources */,
 				C5378F1F295CE31700F341A5 /* UIKitSearchView.swift in Sources */,
