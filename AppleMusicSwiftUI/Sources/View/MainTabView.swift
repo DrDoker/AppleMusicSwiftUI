@@ -22,7 +22,8 @@ struct MainTabView: View {
 				.tabItem {
 					Label(Strings.TabView.searchTab, systemImage: SFSymbols.search.string)
 				}
-			SearchUIKitView()
+			UIKitSearchView()
+				.ignoresSafeArea(.all, edges: .top)
 				.tabItem {
 					Label("UIKit", systemImage: SFSymbols.search.string)
 				}
