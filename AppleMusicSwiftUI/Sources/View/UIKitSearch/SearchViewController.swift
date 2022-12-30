@@ -37,7 +37,6 @@ class SearchViewController: UIViewController {
 		return collectionView
 	}()
 	
-	
 	// MARK: - Lifecycle
 	
 	override func viewDidLoad() {
@@ -87,11 +86,21 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
 		cell.categoriImage.image = UIImage(named: model[indexPath.item].image)
 		cell.categoriTitle.text = model[indexPath.item].title
 		
+		cell.layer.shadowColor = UIColor.black.cgColor
+		cell.layer.shadowOpacity = 0.3
+		cell.layer.shadowOffset = .zero
+		cell.layer.shadowRadius = 3
+		cell.layer.shouldRasterize = true
+		cell.layer.rasterizationScale = UIScreen.main.scale
+		
 		return cell
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-		let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SearchCellHeader.identifier, for: indexPath) as? SearchCellHeader
+		let header = collectionView.dequeueReusableSupplementaryView(
+			ofKind: kind,
+			withReuseIdentifier: SearchCellHeader.identifier,
+			for: indexPath) as? SearchCellHeader
 		guard let header = header else { return SearchCellHeader() }
 		header.headerTitle.text = Strings.Search.categoriesTitle
 		return header
