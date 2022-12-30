@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
-    static let identifier = "SearchCell"
+	static let identifier = "SearchCell"
 	
 	// MARK: - Outlets
 	
@@ -32,7 +32,7 @@ class SearchCollectionViewCell: UICollectionViewCell {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-
+		
 		setupHierarchy()
 		setupLayout()
 	}

@@ -83,7 +83,7 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.identifier, for: indexPath) as? SearchCollectionViewCell
 		
 		guard let cell = cell else { return UICollectionViewCell() }
-	
+		
 		cell.categoriImage.image = UIImage(named: model[indexPath.item].image)
 		cell.categoriTitle.text = model[indexPath.item].title
 		

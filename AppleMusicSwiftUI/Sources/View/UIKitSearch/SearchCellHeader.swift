@@ -11,10 +11,10 @@ class SearchCellHeader: UICollectionReusableView {
 	static let identifier = "SearchHeader"
 	
 	// MARK: - Outlets
-		
+	
 	lazy var headerTitle: UILabel = {
 		let label = UILabel()
-	//	label.textColor = .white
+		//	label.textColor = .white
 		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
 		label.textAlignment = .left
 		return label
@@ -24,7 +24,7 @@ class SearchCellHeader: UICollectionReusableView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-
+		
 		setupHierarchy()
 		setupLayout()
 	}
