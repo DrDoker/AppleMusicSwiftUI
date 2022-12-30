@@ -7,49 +7,59 @@
 
 import SwiftUI
 
-struct PlayerView: View {
+struct MiniPlayerView: View {
+	@State private var isPresented = false
+	
 	var body: some View {
 		HStack(alignment: .center) {
-			Image("cover")
+			Image(with: .cover)
 				.resizable()
 				.scaledToFit()
 				.frame(
-					width: 60,
-					height: 60
+					width: 50,
+					height: 50
 				)
-				.cornerRadius(4)
+				.cornerRadius(6)
 				.shadow(radius: 5)
 			
-			Text("Eminem - Lost Yourself")
+			Text(Strings.Player.songTitle)
 				.padding(.leading)
 			
 			Spacer()
 			
 			HStack {
 				Button(action: {}) {
-					Image(systemName: "play.fill")
+					Image(with: .play)
 						.padding(.trailing, 10)
 				}
 				Button(action: {}) {
-					Image(systemName: "forward.fill")
+					Image(with: .forward)
 						.padding(.trailing, 10)
 				}
 			}
 			.imageScale(.large)
-			.foregroundColor(.black)
+			.foregroundColor(Colors.playerButton)
 			
 		}
 		.padding(.horizontal)
-		.frame(height: 80)
-		.background(Color.white)
-		.overlay(Divider(), alignment: .top)
+		.frame(height: 65)
 		.overlay(Divider(), alignment: .bottom)
+		.background(.bar)
+		.offset(y: -49)
+		.onTapGesture {
+			withAnimation {
+				isPresented.toggle()
+			}
+			
+		}
+		
+		ClosePlayerView(isPresented: $isPresented)
+			.animation(.default, value: isPresented)
 	}
-	
 }
 
 struct PlayerView_Previews: PreviewProvider {
 	static var previews: some View {
-		PlayerView()
+		MiniPlayerView()
 	}
 }

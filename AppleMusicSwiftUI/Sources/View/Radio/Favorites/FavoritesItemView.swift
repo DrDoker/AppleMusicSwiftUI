@@ -12,11 +12,11 @@ struct FavoritesItemView: View {
 	var description: String
 	var image: String
 	
-    var body: some View {
+	var body: some View {
 		VStack(alignment: .leading, spacing: 1.0) {
 			Text(title)
 				.font(.system(size: 16))
-				.foregroundColor(Color.gray)
+				.foregroundColor(Colors.subtitle)
 				.padding(.bottom, 0.0)
 			
 			Text(description)
@@ -27,7 +27,7 @@ struct FavoritesItemView: View {
 				.lineLimit(2)
 				.padding(.trailing, 5)
 				.padding(.bottom, 10)
-	
+			
 			Image(image)
 				.resizable()
 				.cornerRadius(8)
@@ -35,11 +35,14 @@ struct FavoritesItemView: View {
 				.frame(height: 200)
 		}
 		.frame(width: 300)
-    }
+	}
 }
 
 struct HorizontalGridItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoritesItemView(title: "Title", description: "Gentle indie pop and rock melodies that make moments better.", image: "indie")
-    }
+	static var previews: some View {
+		FavoritesItemView(
+			title: "Title",
+			description: "Gentle indie pop and rock melodies that make moments better.",
+			image: AssetsImages.indie.string)
+	}
 }

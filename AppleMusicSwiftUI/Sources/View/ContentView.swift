@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+	var body: some View {
 		ZStack(alignment: .bottom) {
 			MainTabView()
-			PlayerView()
-				.offset(y: -50)
+			MiniPlayerView()
 		}
-    }
+		.ignoresSafeArea(.keyboard, edges: .bottom)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }

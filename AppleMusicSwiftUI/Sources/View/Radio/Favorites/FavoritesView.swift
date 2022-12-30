@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-
-
 struct FavoritesView: View {
 	
-	@State var favorites = FavoritesModel.data
+	private var favorites = Favorites.data
 	var rows: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
 	
 	var body: some View {
 		ScrollView(.horizontal, showsIndicators: false) {
 			LazyHGrid(rows: rows) {
 				ForEach(favorites, id: \.id) { item in
-					FavoritesItemView(title: item.title, description: item.description, image: item.image)
+					FavoritesItemView(
+						title: item.title,
+						description: item.description,
+						image: item.image)
 				}
 			}
 			.padding(.horizontal)
@@ -27,7 +28,7 @@ struct FavoritesView: View {
 }
 
 struct HorizontalGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoritesView()
-    }
+	static var previews: some View {
+		FavoritesView()
+	}
 }
